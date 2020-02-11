@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/style.css"  media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+<body>
+
+<ul id="dropdown1" class="dropdown-content">
+    <li><a href="#">one</a></li>
+    <li><a href="#">two</a></li>
+    <li class="divider"></li>
+    <li><a href="#">three</a></li>
+</ul>
+<nav class="z-depth-0">
+    <div class="nav-wrapper white">
+        <a href="#" class="brand-logo"><img src="img/logo.png"/></a>
+        <ul class="right hide-on-med-and-down">
+            <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Services<i class="material-icons right">keyboard_arrow_down</i></a></li>
+            <li><a href="#">Become a professional</a></li>
+            <li><a class="modal-trigger" href="#modal1">Log in / Sign up</a></li>
+            <!-- Dropdown Trigger -->
+        </ul>
+    </div>
+
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+        <div class="modal-content black-text">
+            <i class="material-icons modal-close right">close</i>
+            <h4>Sign In</h4>
+            <div class="flex mob-num">
+                <i class="material-icons right">smartphone</i><input placeholder="Mobile Number"/>
+            </div>
+            <div class="social flex">
+                <div>
+                    <a class="waves-effect waves-light btn">Generate OTP</a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="img/fb-color.png"/>
+                    </a>
+                    <a href="#">
+                        <img src="img/google.png"/>
+                    </a>
+                </div>
+            </div>
+            <div class="terms"">By signing up, you agree to our <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a></div>
+        </div>
+    </div>
+</nav>
+<div class="bg">
+    <div class="container flex">
+        <div class="search">
+            <h3>We are there to help!</h3>
+            <h6>Think Aaram, Think Aaramsey.</h6>
+            <div class="flex search-box">
+                <div>
+                <ul id="location" class="dropdown-content">
+                    <li><a href="#!">one</a></li>
+                    <li><a href="#!">two</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#!">three</a></li>
+                </ul>
+                <a class="dropdown-trigger" href="#!" data-target="location">
+                    <i class="material-icons" style="color:#6E8387">location_on</i> Bhopal<i class="material-icons right">keyboard_arrow_down</i></a>
+                </div>
+                <div class="search-area">
+                    <input placeholder="Search for service" type="text"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="categories">
+    <div class="container">
+        <div class="row">
+            <div class="col s2">
+                <a href="step1.html">
+                    <img src="img/categories/cleaning.png"/>
+                    Cleaning
+                </a>
+            </div>
+            <div class="col s2">
+                <a href="#">
+                    <img src="img/categories/plumber.png"/>
+                    Plumber
+                </a>
+            </div>
+            <div class="col s2">
+                <a href="#">
+                    <img src="img/categories/electrician.png"/>
+                    Appliance Repair
+                </a>
+            </div>
+            <div class="col s2">
+                <a href="#">
+                    <img src="img/categories/carpenter.png"/>
+                    Carpenter
+                </a>
+            </div>
+            <div class="col s2">
+                <a href="#">
+                    <img src="img/categories/women-salon.png"/>
+                    Women's Salon
+                </a>
+            </div>
+            <div class="col s2">
+                <a href="#">
+                    <img src="img/categories/men-salon.png"/>
+                    Men's Salon
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s2">
+                <a href="#">
+                    <img src="img/categories/Applicance.png"/>
+                    Appliances & Electronics
+                </a>
+            </div>
+            <div class="col s2">
+                <a href="#">
+                    <img src="img/categories/BRTS-Bhopal.png"/>
+                    BRTS Bhopal
+                </a>
+            </div>
+            <div class="col s2">
+                <a href="#">
+                    <img src="img/categories/rto.png"/>
+                    RTO, Passport & Consultancy
+                </a>
+            </div>
+            <div class="col s2">
+                <a href="#">
+                    <img src="img/categories/CCTV.png"/>
+                    CCTV & Video
+                </a>
+            </div>
+            <div class="col s2">
+                <a href="#">
+                    <img src="img/categories/gps.png"/>
+                    GPS Tracker
+                </a>
+            </div>
+            <div class="col s2">
+                <a href="#">
+                    <img src="img/categories/driver.png"/>
+                    Driver Services
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s2">
+                <a href="#">
+                    <img src="img/categories/event.png"/>
+                    Event Management Services
+                </a>
+            </div>
+            <div class="col s2">
+                <a href="#">
+                    <img src="img/categories/pest.png"/>
+                    Pest Control
+                </a>
+            </div>
+            <div class="col s2">
+                <a href="#">
+                    <img src="img/categories/tutor.png"/>
+                    Home Tutor & Project Work
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="how-works">
+    <div class="container">
+        <h5>How it works</h5>
+        <div class="flex illus">
+            <div class="steps"><img src="img/how/schedule.png"/>Book a service</div>
+            <div class="steps"><img src="img/how/home.png"/>Professional comes to you</div>
+            <div class="steps"><img src="img/how/fix.png"/>Get the work done</div>
+            <div class="steps"><img src="img/how/payment.png"/>Simplified Payment</div>
+        </div>
+        <div class="steps-subtext flex">
+            <div>Step 1</div>
+            <div>Step 2</div>
+            <div>Step 3</div>
+            <div>Step 4</div>
+        </div>
+    </div>
+</section>
+
+<section class="about-us">
+    <div class="container">
+        <div class="border"></div>
+        <div class="row">
+            <div class="col s7">
+                <h5>About Us</h5>
+                <div>Aaramsey is an online service platform committed to providing superior service to its customers at a reasonable cost.
+                    We provide a high-quality service on this platform. We are a conveniently accessible marketplace for local services.
+                    We help our clients choose reliable and trained professionals for all their service needs.</div>
+            </div>
+            <div class="offset-s1 col s4"></div>
+        </div>
+    </div>
+</section>
+
+<section class="features">
+    <div class="container">
+        <div class="flex">
+            <div class="top-col flex">
+                <div class="feature-img">
+                    <img src="img/features/transparent.png"/>
+                </div>
+                <div class="feature-text">
+                    <div>Transparent</div>
+                    <div>See fixed price when you booked service. No hidden charges</div>
+                </div>
+            </div>
+            <div class="top-col flex" style="margin-left:30px;">
+                <div class="feature-img">
+                    <img src="img/features/affordable.png"/>
+                </div>
+                <div class="feature-text">
+                    <div>Affordable</div>
+                    <div>See fixed price when you booked service. No hidden charges</div>
+                </div>
+            </div>
+        </div>
+        <div class="flex" style="margin-top:30px;">
+            <div class="top-col flex">
+                <div class="feature-img">
+                    <img src="img/features/equipped.png"/>
+                </div>
+                <div class="feature-text">
+                    <div>Fully Equipped</div>
+                    <div>We bring everything needed to get the work done.</div>
+                </div>
+            </div>
+            <div class="top-col flex" style="margin-left:30px;">
+                <div class="feature-img">
+                    <img src="img/features/expert.png"/>
+                </div>
+                <div class="feature-text">
+                    <div>Expert Partner</div>
+                    <div>Trained and verified working professionals and have hands on expertise on their job.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mobile-bg">
+    <div class="container">
+        <h2>Download our<br/>Mobile App</h2>
+    </div>
+</section>
+
+<section class="ratings">
+    <div class="container">
+        <div class="flex">
+            <div>
+                <h4>2,567</h4>
+                Customer Served
+            </div>
+            <div>
+                <h4>578</h4>
+                Active Professionals
+            </div>
+            <div>
+                <h4>4.8/5</h4>
+                Average Rating
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="testimonials">
+    <div class="container">
+    <h5>Testimonials</h5>
+    <div class="carousel carousel-slider center">
+        <div class="carousel-fixed-item center">
+            <i onclick="$('.carousel').carousel('prev')" class="material-icons left">keyboard_arrow_left</i>
+            <i onclick="$('.carousel').carousel('next')" class="material-icons right">keyboard_arrow_right</i>
+        </div>
+        <div class="carousel-item" href="#one!">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ut aliquip ex ea commodo consequat.</p>
+            <div>- D.Samuel</div>
+        </div>
+        <div class="carousel-item" href="#two!">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ut aliquip ex ea commodo consequat.</p>
+            <div>- K.Samuel</div>
+        </div>
+        <div class="carousel-item" href="#three!">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ut aliquip ex ea commodo consequat.</p>
+            <div>- L.Samuel</div>
+        </div>
+        <div class="carousel-item" href="#four!">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ut aliquip ex ea commodo consequat.</p>
+            <div>- Z.Samuel</div>
+        </div>
+    </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="flex">
+            <div class="footer-categories">
+                <a href="#">Cleaning</a>
+                <a href="#">Plumber</a>
+                <a href="#">Electrician</a>
+                <a href="#">Carpenter</a>
+            </div>
+            <div class="footer-categories">
+                <a href="#">Salon for Women</a>
+                <a href="#">Salon for Men</a>
+                <a href="#">Appliances & Electronics</a>
+                <a href="#">BRTS Bhopal</a>
+            </div>
+            <div class="footer-categories">
+                <a href="#">RTO, Passport & Consultancy</a>
+                <a href="#">CCTV & Video</a>
+                <a href="#">GPS Trackers</a>
+                <a href="#">Driver Services</a>
+            </div>
+            <div class="footer-categories">
+                <a href="#">Event Management Services</a>
+                <a href="#">Pest Control</a>
+                <a href="#">Home tutor & project work</a>
+            </div>
+        </div>
+        <div class="footer-footer flex">
+            <div class="flex">
+                <a href="#"><img src="img/logo.png"/></a>
+                <div style="margin-left:20px;">© 2020</div>
+            </div>
+            <div class="flex">
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Policy</a>
+                <a class="social" href="#"><img src="img/fb.png"/></a>
+                <a class="social" href="#"><img src="img/insta.png"/></a>
+                <a class="social" href="#"><img src="img/twitter.png"/></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!--JavaScript at end of body for optimized loading-->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/bin/materialize.min.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+</body>
+</html>

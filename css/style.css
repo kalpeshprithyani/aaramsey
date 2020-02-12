@@ -6545,6 +6545,10 @@ body {
   body input, body input:focus {
     border-bottom: 0 !important;
     box-shadow: 0 0 0 0 !important; }
+  body .t-c {
+    padding-top: 150px; }
+    body .t-c h4 {
+      margin-bottom: 80px; }
   body nav {
     top: 0;
     position: fixed;
@@ -6554,10 +6558,10 @@ body {
       color: white; }
     body nav .brand-logo {
       padding: 4px 20px 0 20px; }
-    body nav li a {
-      color: #6E8387; }
-    body nav li:last-child a {
-      color: black; }
+    body nav .hide-on-med-and-down li a {
+      color: #9caaad; }
+    body nav .hide-on-med-and-down li:last-child a {
+      color: white; }
     body nav .modal {
       width: 40%;
       border-radius: 10px;
@@ -6651,7 +6655,7 @@ body {
       body .categories a:hover {
         color: black; }
   body .how-works .container {
-    padding: 100px 0;
+    padding: 200px 0;
     text-align: center; }
   body .how-works .steps-subtext {
     margin: 0 100px;
@@ -6676,8 +6680,17 @@ body {
     width: 100%;
     margin: auto;
     border-top: 1px solid #C8D3D5; }
-  body .about-us .container .row {
-    margin: 100px 0; }
+  body .about-us .container .flex {
+    margin: 200px 0;
+    justify-content: space-between; }
+    body .about-us .container .flex .about-us-text {
+      flex: 0 0 70%; }
+      body .about-us .container .flex .about-us-text h5 {
+        margin-bottom: 20px; }
+    body .about-us .container .flex .about-us-img {
+      flex: 0 0 20%; }
+  body .about-us img {
+    width: 100%; }
   body .features {
     margin-bottom: 150px; }
     body .features .flex .top-col {
@@ -6703,11 +6716,18 @@ body {
     background-image: url("../img/mobileapp.png");
     background-repeat: no-repeat;
     background-position: center;
-    height: 40vh;
+    height: 45vh;
     text-align: right;
     color: white;
     display: flex;
     align-items: center; }
+    body .mobile-bg a {
+      padding: 0;
+      background-color: transparent;
+      border-radius: 8px;
+      height: 60px; }
+      body .mobile-bg a img {
+        height: 100%; }
   body .ratings {
     margin-top: 80px;
     margin-bottom: 80px; }
@@ -6715,7 +6735,7 @@ body {
       margin: 0; }
     body .ratings .flex div {
       text-align: center;
-      flex-grow: 1; }
+      flex-basis: 33.33%; }
   body .testimonials {
     background-color: #D5E5E8;
     padding: 100px 0; }
@@ -6724,6 +6744,10 @@ body {
       margin-bottom: 50px; }
     body .testimonials .carousel {
       height: 100px !important; }
+      body .testimonials .carousel .carousel-fixed-item {
+        top: 50%;
+        transform: translateY(-50%);
+        bottom: auto; }
       body .testimonials .carousel i {
         font-size: 60px;
         cursor: pointer; }
@@ -6888,10 +6912,24 @@ body {
     display: flex; }
 
 @media only screen and (max-width: 600px) {
+  body nav .brand-logo {
+    left: 40px;
+    transform: none; }
+    body nav .brand-logo img {
+      height: 25px; }
+  body nav .dropdown-trigger {
+    font-size: 16px;
+    padding-right: 10px; }
+  body .testimonials .carousel {
+    height: 200px !important; }
+    body .testimonials .carousel .carousel-item {
+      padding: 0 50px; }
   body .bg {
     background-color: #F4F6F8;
     height: 500px;
     background-image: none; }
+    body .bg h6 {
+      margin-top: 20px; }
     body .bg .search-box .search-area {
       display: flex; }
       body .bg .search-box .search-area input {
@@ -6909,6 +6947,8 @@ body {
     body .features .flex .top-col:nth-child(2) {
       margin-top: 20px;
       margin-left: 0 !important; }
+  body .how-works .container {
+    padding: 120px 0; }
   body .how-works .flex.illus {
     margin: 30px 0 0 0;
     flex-wrap: wrap; }
@@ -6922,4 +6962,20 @@ body {
     flex-wrap: wrap; }
     body footer .flex .footer-categories {
       flex-basis: 50%;
-      flex-shrink: 0; } }
+      flex-shrink: 0; }
+  body .ratings .flex {
+    flex-wrap: wrap; }
+    body .ratings .flex div {
+      flex: 0 0 100%; }
+    body .ratings .flex div:not(:first-child) {
+      margin-top: 50px; }
+  body .about-us .container .flex {
+    margin: 120px 0;
+    flex-wrap: wrap; }
+    body .about-us .container .flex .about-us-text {
+      margin-top: 50px;
+      flex: 0 0 100%;
+      order: 2; }
+    body .about-us .container .flex .about-us-img {
+      order: 1;
+      flex: 0 0 50%; } }

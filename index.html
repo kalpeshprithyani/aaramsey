@@ -19,14 +19,18 @@
     <li><a href="#">three</a></li>
 </ul>
 <ul class="sidenav" id="mobile-demo">
-    <li><a href="sass.html">Sass</a></li>
-    <li><a href="badges.html">Components</a></li>
-    <li><a href="collapsible.html">Javascript</a></li>
-    <li><a href="mobile.html">Mobile</a></li>
+    <li><a href="sass.html">Become a professional</a></li>
+    <li><a href="badges.html">Sign In / Sign up</a></li>
 </ul>
 <nav class="z-depth-0">
     <div class="nav-wrapper">
         <a href="#" class="brand-logo"><img src="img/logo.png"/></a>
+
+        <ul id="location-mobile" class="dropdown-content">
+            <li><a href="#!">Bhopal</a></li>
+            <li><a href="#!">Indore</a></li>
+        </ul>
+        <a class="dropdown-trigger show-on-small right" href="#!" data-target="location-mobile" color="white">Bhopal<i class="material-icons right">keyboard_arrow_down</i></a>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
             <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Services<i class="material-icons right">keyboard_arrow_down</i></a></li>
@@ -69,12 +73,10 @@
             <div class="flex search-box">
                 <div>
                 <ul id="location" class="dropdown-content">
-                    <li><a href="#!">one</a></li>
-                    <li><a href="#!">two</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#!">three</a></li>
+                    <li><a href="#">Bhopal</a></li>
+                    <li><a href="#">Indore</a></li>
                 </ul>
-                <a class="dropdown-trigger hide-on-small-only" href="#!" data-target="location">
+                <a class="dropdown-trigger hide-on-small-only" href="#!" data-target="location" data-beloworigin="true">
                     <i class="material-icons" style="color:#6E8387">location_on</i> Bhopal<i class="material-icons right">keyboard_arrow_down</i></a>
                 </div>
                 <div class="search-area">
@@ -89,7 +91,7 @@
     <div class="container">
         <div class="row">
             <div class="col s4 m3 l2">
-                <a href="step1.html">
+                <a href="#">
                     <img src="img/categories/cleaning.png"/>
                     Cleaning
                 </a>
@@ -202,14 +204,16 @@
 <section class="about-us">
     <div class="container">
         <div class="border"></div>
-        <div class="row">
-            <div class="col s12 m7 l7">
+        <div class="flex">
+            <div class="about-us-text">
                 <h5>About Us</h5>
                 <div>Aaramsey is an online service platform committed to providing superior service to its customers at a reasonable cost.
                     We provide a high-quality service on this platform. We are a conveniently accessible marketplace for local services.
                     We help our clients choose reliable and trained professionals for all their service needs.</div>
             </div>
-            <div class="offset-s1 col s4"></div>
+            <div class="about-us-img">
+                <img src="img/about-us.png"/>
+            </div>
         </div>
     </div>
 </section>
@@ -262,6 +266,7 @@
 <section class="mobile-bg">
     <div class="container">
         <h2>Download our<br/>Mobile App</h2>
+        <a class="waves-effect waves-light btn"><img src="img/google-play-badge.png"/></a>
     </div>
 </section>
 

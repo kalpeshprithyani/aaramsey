@@ -2,7 +2,9 @@ $(document).ready(function(){
     $('.carousel.carousel-slider').carousel({
         fullWidth: true
     });
-    $('.dropdown-trigger').dropdown();
+    $('.dropdown-trigger').dropdown({
+        coverTrigger: false
+    });
     $('.modal').modal();
     $('.collapsible').collapsible({accordion: false});
     $('.datepicker').datepicker({

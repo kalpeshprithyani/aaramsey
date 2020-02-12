@@ -27,6 +27,12 @@ body{
     box-shadow: 0 0 0 0 !important;
   }
 
+  .t-c{
+    padding-top:150px;
+    h4{
+      margin-bottom:80px;
+    }
+  }
 
   nav{
     top:0;
@@ -39,11 +45,13 @@ body{
     .brand-logo{
       padding:4px 20px 0 20px;
     }
-    li a{
-      color:$secondary-color;
-    }
-    li:last-child a{
-        color: black;
+    .hide-on-med-and-down{
+      li a{
+        color:$darkbg-text-color;
+      }
+      li:last-child a{
+          color: white;
+      }
     }
     .modal{
       width:40%;
@@ -169,7 +177,7 @@ body{
 
   .how-works{
     .container{
-      padding: 100px 0;
+      padding: 200px 0;
       text-align: center;
     }
     .steps-subtext{
@@ -205,9 +213,22 @@ body{
         margin: auto;
         border-top:1px solid $border-color;
       }
-      .row{
-        margin:100px 0;
+      .flex{
+        margin:200px 0;
+        justify-content: space-between;
+        .about-us-text{
+          h5{
+            margin-bottom: 20px;
+          }
+          flex: 0 0 70%;
+        }
+        .about-us-img{
+          flex: 0 0 20%;
+        }
       }
+    }
+    img{
+      width:100%;
     }
   }
 
@@ -246,11 +267,20 @@ body{
     background-image: url("../img/mobileapp.png");
     background-repeat: no-repeat;
     background-position: center;
-    height:40vh;
+    height:45vh;
     text-align: right;
     color:white;
     display: flex;
     align-items: center;
+    a{
+      padding:0;
+      background-color: transparent;
+      border-radius: 8px;
+      height:60px;
+      img{
+        height:100%;
+      }
+    }
   }
 
   .ratings{
@@ -262,7 +292,7 @@ body{
     .flex{
       div{
         text-align: center;
-        flex-grow: 1;
+        flex-basis: 33.33%;
       }
     }
   }
@@ -276,6 +306,11 @@ body{
     }
     .carousel{
       height:100px !important;
+      .carousel-fixed-item{
+        top: 50%;
+        transform: translateY(-50%);
+        bottom: auto;
+      }
       i{
         font-size: 60px;
         cursor:pointer
@@ -505,10 +540,34 @@ body{
 
 @media only screen and (max-width: 600px) {
   body{
+    nav{
+      .brand-logo{
+        left:40px;
+        transform: none;
+        img{
+          height:25px;
+        }
+      }
+      .dropdown-trigger{
+        font-size: 16px;
+        padding-right:10px;
+      }
+    }
+    .testimonials{
+      .carousel{
+        height:200px !important;
+        .carousel-item{
+          padding:0 50px;
+        }
+      }
+    }
     .bg{
       background-color: #F4F6F8;
       height:500px;
       background-image: none;
+      h6{
+        margin-top:20px;
+      }
       .search-box .search-area{
         display: flex;
         input{
@@ -536,6 +595,9 @@ body{
       }
     }
     .how-works{
+      .container{
+        padding:120px 0;
+      }
       .flex.illus{
       margin:30px 0 0 0;
         flex-wrap: wrap;
@@ -555,6 +617,34 @@ body{
         .footer-categories{
           flex-basis: 50%;
           flex-shrink: 0;
+        }
+      }
+    }
+    .ratings{
+      .flex{
+        flex-wrap: wrap;
+        div{
+          flex: 0 0 100%;
+        }
+        div:not(:first-child){
+          margin-top:50px;
+        }
+      }
+    }
+    .about-us{
+      .container{
+        .flex{
+          margin:120px 0;
+          flex-wrap: wrap;
+          .about-us-text{
+            margin-top:50px;
+            flex: 0 0 100%;
+            order:2;
+          }
+          .about-us-img{
+            order:1;
+            flex:0 0 50%;
+          }
         }
       }
     }

@@ -7,7 +7,16 @@
     <link type="text/css" rel="stylesheet" href="css/style.css"  media="screen,projection"/>
 
     <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+
+    <!-- Android Viewport height fix-->
+    <script type="text/javascript">
+        let isAndroid = navigator.userAgent.toLowerCase().indexOf("android") > -1; //&& ua.indexOf("mobile");
+        if(isAndroid) {
+            document.write('<meta name="viewport" content="width=device-width,height='+window.innerHeight+', initial-scale=1.0">');
+        }else{
+            document.write('<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">');
+        }
+    </script>
 </head>
 
 <body>

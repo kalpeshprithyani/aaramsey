@@ -6549,6 +6549,8 @@ body {
     padding-top: 150px; }
     body .t-c h4 {
       margin-bottom: 80px; }
+  body .sidenav {
+    padding-top: 50px; }
   body nav {
     top: 0;
     position: fixed;
@@ -6920,8 +6922,14 @@ body {
   body nav .dropdown-trigger {
     font-size: 16px;
     padding-right: 10px; }
+  body nav #location-mobile {
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.05); }
+    body nav #location-mobile a {
+      color: black; }
+  body .testimonials .container {
+    width: 96%; }
   body .testimonials .carousel {
-    height: 200px !important; }
+    height: 210px !important; }
     body .testimonials .carousel .carousel-item {
       padding: 0 50px; }
   body .bg {

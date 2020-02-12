@@ -6,6 +6,10 @@ body{
   background-color:#FCFAFA;
   font-family: 'Open Sans', sans-serif;
 
+  .show-on-small{
+    display: none;
+  }
+
   ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: $secondary-color;
     opacity: 1; /* Firefox */
@@ -27,8 +31,11 @@ body{
   nav{
     top:0;
     position: fixed;
-    background-color: white;
+    background-color: #000000;
     z-index: 99;
+    .sidenav-trigger{
+      color:white;
+    }
     .brand-logo{
       padding:4px 20px 0 20px;
     }
@@ -92,6 +99,7 @@ body{
       }
     }
   }
+  
   .bg{
     margin-top:60px;
     height:60vh;
@@ -119,6 +127,9 @@ body{
       }
       .search-area{
         padding:15px 0;
+        .show-on-small-custom{
+          display: none;
+        }
         input{
           margin-bottom: 0;
           border-left:1px solid #E1E1E1;
@@ -134,6 +145,8 @@ body{
     padding-bottom: 50px;
     .row{
       padding-top:50px;
+      .col{height:130px;
+      }
     }
     text-align: center;
     img{
@@ -190,7 +203,7 @@ body{
       .border{
         width: 100%;
         margin: auto;
-        border-top:1px solid #C8D3D5;
+        border-top:1px solid $border-color;
       }
       .row{
         margin:100px 0;
@@ -276,20 +289,159 @@ body{
     }
   }
 
+  .service-detail{
+    padding-top: 100px;
+    .head{
+      justify-content: space-between;
+      margin: 0 20px 30px 0;
+      .flex{
+        align-items: center;
+      }
+      .back{
+        color:black;
+        margin-right:10px;
+        border-radius: 30px;
+        height:50px;
+        width:50px;
+        display: block;
+        padding: 13px 0 0 13px;
+        &:hover{
+          background-color: rgba(0,0,0,0.1);
+        }
+      }
+      .service-category{
+        font-size: 12px;
+        color:$secondary-color;
+      }
+      .service-name{
+        font-size: 26px;
+        font-weight: bold;
+       }
+      .btn{
+        background-color: $primary-color;
+        box-shadow: none;
+        padding:15px 20px;
+        display: block;
+        height: auto;
+        margin-left:50px;
+      }
+      .btn-next{
+        padding:15px 35px;
+      }
+      .service-price{
+        font-size: 26px;
+        font-weight: bold;
+        color: $text-secondary;
+      }
+    }
+
+    .service-ratings{
+      padding:60px 20px 0 0;
+      border-top: 1px solid $border-color;
+      .service-detail-container{
+        justify-content: space-between;
+        .service-bookings,.service-stars{
+          text-align: center;
+          border:1px solid $border-color;
+          padding:20px 10px;
+          height:100px;
+          width:200px;
+          margin-left:20px;
+          border-radius: 15px;
+          .service-booking-number{
+            font-size: 2em;
+          }
+          .service-rating-stars{
+            margin-top:5px;
+          }
+        }
+      }
+      .service-features{
+        .datepicker,.timepicker{
+          background-color: rgba(0,0,0,0.1);
+          border-radius: 10px;
+          padding-left:10px;
+          margin-left:10px;
+          width:60px;
+        }
+        .timepicker{
+          width:80px;
+        }
+        ul{
+          margin-top:0;
+          margin-left:50px;
+          li{
+            list-style-type: disc;
+            margin-bottom:20px;
+          }
+        }
+      }
+    }
+
+    .service-address{
+      margin-top:50px;
+      .add-new-address,.address-block{
+        border: 1px solid $border-color;
+        border-radius: 10px;
+      }
+      .add-new-address{
+        text-align: center;
+        padding:30px;
+        i{
+          font-size: 3em;
+        }
+      }
+      .address-block{
+        padding:0;
+        margin-left:20px;
+        label{
+          width:100%;
+          display: block;
+          padding:10px;
+        }
+      }
+      .active{
+        background-color: rgba(0,0,0,0.05);
+      }
+    }
+  }
+
+
   .services{
-    min-height: 90vh;
     padding-top:100px;
     .collapsible{
-      -webkit-box-shadow: 0 3px 6px 0 rgba(0,0,0,0.15);
-      -moz-box-shadow: 0 3px 6px 0 rgba(0,0,0,0.15);
-      box-shadow: 0 3px 6px 0 rgba(0,0,0,0.15);
+      -webkit-box-shadow: 0 3px 10px 0 rgba(0,0,0,0.10);
+      -moz-box-shadow: 0 3px 10px 0 rgba(0,0,0,0.10);
+      box-shadow: 0 3px 10px 0 rgba(0,0,0,0.10);
     }
     .collapsible-header{
       align-items: center;
       padding:0;
+      img{
+        margin-right:20px;
+      }
       i{
       margin-left:auto;
+      }
     }
+    .collapsible-body{
+      padding:0;
+      a{
+        justify-content: space-between;
+        display:flex;
+        padding:25px;
+        color:black;
+        .price{
+          color:$text-secondary;
+          font-weight: 700;
+        }
+        &:hover{
+          background-color: rgba(0,0,0,0.05);
+        }
+      }
+      a:not(:first-child){
+        border-top:1px solid $border-color;
+      }
     }
   }
 
@@ -348,5 +500,63 @@ body{
   }
   .flex{
     display: flex;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body{
+    .bg{
+      background-color: #F4F6F8;
+      height:50vh;
+      background-image: none;
+      .search-box .search-area{
+        display: flex;
+        input{
+          border-left:0;
+        }
+        .show-on-small-custom{
+          display: inline-block;
+          font-size: 30px;
+          padding-left: 15px;
+          padding-top: 7px;
+        }
+      }
+    }
+    .features{
+      .flex{
+        flex-wrap: wrap;
+        .top-col{
+          flex-shrink: 0;
+          flex-basis: 100%;
+        }
+        .top-col:nth-child(2){
+          margin-top:20px;
+          margin-left:0 !important;
+        }
+      }
+    }
+    .how-works{
+      .flex.illus{
+      margin:30px 0 0 0;
+        flex-wrap: wrap;
+        .steps{
+          margin-top:10px;
+          flex-basis: 48%;
+          flex-shrink: 0;
+        }
+      }
+      .steps-subtext{
+        margin: 0;
+      }
+    }
+    footer{
+      .flex{
+        flex-wrap: wrap;
+        .footer-categories{
+          flex-basis: 50%;
+          flex-shrink: 0;
+        }
+      }
+    }
   }
 }

@@ -6529,6 +6529,8 @@ input[type=range]::-ms-thumb {
 body {
   background-color: #FCFAFA;
   font-family: 'Open Sans', sans-serif; }
+  body .show-on-small {
+    display: none; }
   body ::placeholder {
     /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: #6E8387;
@@ -6546,8 +6548,10 @@ body {
   body nav {
     top: 0;
     position: fixed;
-    background-color: white;
+    background-color: #000000;
     z-index: 99; }
+    body nav .sidenav-trigger {
+      color: white; }
     body nav .brand-logo {
       padding: 4px 20px 0 20px; }
     body nav li a {
@@ -6619,6 +6623,8 @@ body {
           vertical-align: -5px; }
       body .bg .search-box .search-area {
         padding: 15px 0; }
+        body .bg .search-box .search-area .show-on-small-custom {
+          display: none; }
         body .bg .search-box .search-area input {
           margin-bottom: 0;
           border-left: 1px solid #E1E1E1;
@@ -6630,6 +6636,8 @@ body {
     text-align: center; }
     body .categories .row {
       padding-top: 50px; }
+      body .categories .row .col {
+        height: 130px; }
     body .categories img {
       height: 50px;
       display: block;
@@ -6723,18 +6731,119 @@ body {
         padding: 0 100px; }
         body .testimonials .carousel .carousel-item div {
           font-weight: bold; }
+  body .service-detail {
+    padding-top: 100px; }
+    body .service-detail .head {
+      justify-content: space-between;
+      margin: 0 20px 30px 0; }
+      body .service-detail .head .flex {
+        align-items: center; }
+      body .service-detail .head .back {
+        color: black;
+        margin-right: 10px;
+        border-radius: 30px;
+        height: 50px;
+        width: 50px;
+        display: block;
+        padding: 13px 0 0 13px; }
+        body .service-detail .head .back:hover {
+          background-color: rgba(0, 0, 0, 0.1); }
+      body .service-detail .head .service-category {
+        font-size: 12px;
+        color: #6E8387; }
+      body .service-detail .head .service-name {
+        font-size: 26px;
+        font-weight: bold; }
+      body .service-detail .head .btn, body .service-detail .head .btn-large, body .service-detail .head .btn-small {
+        background-color: #00BB22;
+        box-shadow: none;
+        padding: 15px 20px;
+        display: block;
+        height: auto;
+        margin-left: 50px; }
+      body .service-detail .head .btn-next {
+        padding: 15px 35px; }
+      body .service-detail .head .service-price {
+        font-size: 26px;
+        font-weight: bold;
+        color: #198400; }
+    body .service-detail .service-ratings {
+      padding: 60px 20px 0 0;
+      border-top: 1px solid #C8D3D5; }
+      body .service-detail .service-ratings .service-detail-container {
+        justify-content: space-between; }
+        body .service-detail .service-ratings .service-detail-container .service-bookings, body .service-detail .service-ratings .service-detail-container .service-stars {
+          text-align: center;
+          border: 1px solid #C8D3D5;
+          padding: 20px 10px;
+          height: 100px;
+          width: 200px;
+          margin-left: 20px;
+          border-radius: 15px; }
+          body .service-detail .service-ratings .service-detail-container .service-bookings .service-booking-number, body .service-detail .service-ratings .service-detail-container .service-stars .service-booking-number {
+            font-size: 2em; }
+          body .service-detail .service-ratings .service-detail-container .service-bookings .service-rating-stars, body .service-detail .service-ratings .service-detail-container .service-stars .service-rating-stars {
+            margin-top: 5px; }
+      body .service-detail .service-ratings .service-features .datepicker, body .service-detail .service-ratings .service-features .timepicker {
+        background-color: rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        padding-left: 10px;
+        margin-left: 10px;
+        width: 60px; }
+      body .service-detail .service-ratings .service-features .timepicker {
+        width: 80px; }
+      body .service-detail .service-ratings .service-features ul {
+        margin-top: 0;
+        margin-left: 50px; }
+        body .service-detail .service-ratings .service-features ul li {
+          list-style-type: disc;
+          margin-bottom: 20px; }
+    body .service-detail .service-address {
+      margin-top: 50px; }
+      body .service-detail .service-address .add-new-address, body .service-detail .service-address .address-block {
+        border: 1px solid #C8D3D5;
+        border-radius: 10px; }
+      body .service-detail .service-address .add-new-address {
+        text-align: center;
+        padding: 30px; }
+        body .service-detail .service-address .add-new-address i {
+          font-size: 3em; }
+      body .service-detail .service-address .address-block {
+        padding: 0;
+        margin-left: 20px; }
+        body .service-detail .service-address .address-block label {
+          width: 100%;
+          display: block;
+          padding: 10px; }
+      body .service-detail .service-address .active {
+        background-color: rgba(0, 0, 0, 0.05); }
   body .services {
-    min-height: 90vh;
     padding-top: 100px; }
     body .services .collapsible {
-      -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.15);
-      -moz-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.15);
-      box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.15); }
+      -webkit-box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.1);
+      -moz-box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.1);
+      box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.1); }
     body .services .collapsible-header {
       align-items: center;
       padding: 0; }
+      body .services .collapsible-header img {
+        margin-right: 20px; }
       body .services .collapsible-header i {
         margin-left: auto; }
+    body .services .collapsible-body {
+      padding: 0; }
+      body .services .collapsible-body a {
+        justify-content: space-between;
+        display: flex;
+        padding: 25px;
+        color: black; }
+        body .services .collapsible-body a .price {
+          color: #198400;
+          font-weight: 700; }
+        body .services .collapsible-body a:hover {
+          background-color: rgba(0, 0, 0, 0.05); }
+      body .services .collapsible-body a:not(:first-child) {
+        border-top: 1px solid #C8D3D5; }
   body footer {
     padding-top: 50px;
     background-color: #1A181B;
@@ -6777,3 +6886,40 @@ body {
     font-weight: 700; }
   body .flex {
     display: flex; }
+
+@media only screen and (max-width: 600px) {
+  body .bg {
+    background-color: #F4F6F8;
+    height: 50vh;
+    background-image: none; }
+    body .bg .search-box .search-area {
+      display: flex; }
+      body .bg .search-box .search-area input {
+        border-left: 0; }
+      body .bg .search-box .search-area .show-on-small-custom {
+        display: inline-block;
+        font-size: 30px;
+        padding-left: 15px;
+        padding-top: 7px; }
+  body .features .flex {
+    flex-wrap: wrap; }
+    body .features .flex .top-col {
+      flex-shrink: 0;
+      flex-basis: 100%; }
+    body .features .flex .top-col:nth-child(2) {
+      margin-top: 20px;
+      margin-left: 0 !important; }
+  body .how-works .flex.illus {
+    margin: 30px 0 0 0;
+    flex-wrap: wrap; }
+    body .how-works .flex.illus .steps {
+      margin-top: 10px;
+      flex-basis: 48%;
+      flex-shrink: 0; }
+  body .how-works .steps-subtext {
+    margin: 0; }
+  body footer .flex {
+    flex-wrap: wrap; }
+    body footer .flex .footer-categories {
+      flex-basis: 50%;
+      flex-shrink: 0; } }

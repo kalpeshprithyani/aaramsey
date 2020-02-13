@@ -27,10 +27,48 @@ body{
     box-shadow: 0 0 0 0 !important;
   }
 
+  .faq{
+    padding-top: 40px;
+    padding-bottom:200px;
+    h4{
+      text-align: center;
+      padding:120px 0;
+      margin-bottom:100px;
+      background-color: white;
+    }
+    div{
+      line-height: 30px;
+    }
+    ul li{
+      margin-left:30px;
+      list-style-type: disc;
+    }
+    div div{
+      font-weight: bold;
+      margin-bottom:20px;
+      margin-top:60px;
+      &:before{
+        content:'Q.';
+        margin-left:-26px;
+        margin-right:10px;
+      }
+    }
+  }
+
   .t-c{
     padding-top:150px;
     h4{
       margin-bottom:80px;
+    }
+    div{
+      margin-bottom:150px;
+      line-height: 30px;
+      span{
+        background-color: yellow;
+      }
+      strong{
+        font-weight: bold;
+      }
     }
   }
 
@@ -225,6 +263,13 @@ body{
             margin-bottom: 20px;
           }
           flex: 0 0 70%;
+          .btn-flat{
+            padding:0;
+            margin-top:20px;
+            i{
+              vertical-align:-5px;
+            }
+          }
         }
         .about-us-img{
           flex: 0 0 20%;
@@ -517,7 +562,7 @@ body{
             color:white;
           }
         }
-        .social{
+        .social a{
           opacity: 0.6;
           img{height:20px;}
           &:hover{

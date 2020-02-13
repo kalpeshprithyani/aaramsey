@@ -6545,10 +6545,38 @@ body {
   body input, body input:focus {
     border-bottom: 0 !important;
     box-shadow: 0 0 0 0 !important; }
+  body .faq {
+    padding-top: 40px;
+    padding-bottom: 200px; }
+    body .faq h4 {
+      text-align: center;
+      padding: 120px 0;
+      margin-bottom: 100px;
+      background-color: white; }
+    body .faq div {
+      line-height: 30px; }
+    body .faq ul li {
+      margin-left: 30px;
+      list-style-type: disc; }
+    body .faq div div {
+      font-weight: bold;
+      margin-bottom: 20px;
+      margin-top: 60px; }
+      body .faq div div:before {
+        content: 'Q.';
+        margin-left: -26px;
+        margin-right: 10px; }
   body .t-c {
     padding-top: 150px; }
     body .t-c h4 {
       margin-bottom: 80px; }
+    body .t-c div {
+      margin-bottom: 150px;
+      line-height: 30px; }
+      body .t-c div span {
+        background-color: yellow; }
+      body .t-c div strong {
+        font-weight: bold; }
   body .sidenav {
     padding-top: 50px; }
   body nav {
@@ -6689,6 +6717,11 @@ body {
       flex: 0 0 70%; }
       body .about-us .container .flex .about-us-text h5 {
         margin-bottom: 20px; }
+      body .about-us .container .flex .about-us-text .btn-flat {
+        padding: 0;
+        margin-top: 20px; }
+        body .about-us .container .flex .about-us-text .btn-flat i {
+          vertical-align: -5px; }
     body .about-us .container .flex .about-us-img {
       flex: 0 0 20%; }
   body .about-us img {
@@ -6897,11 +6930,11 @@ body {
             height: 20px; }
           body footer .footer-footer .flex a:hover {
             color: white; }
-        body footer .footer-footer .flex .social {
+        body footer .footer-footer .flex .social a {
           opacity: 0.6; }
-          body footer .footer-footer .flex .social img {
+          body footer .footer-footer .flex .social a img {
             height: 20px; }
-          body footer .footer-footer .flex .social:hover {
+          body footer .footer-footer .flex .social a:hover {
             opacity: 1; }
   body h3 {
     margin: 0;

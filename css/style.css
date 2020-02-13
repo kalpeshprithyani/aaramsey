@@ -6545,6 +6545,16 @@ body {
   body input, body input:focus {
     border-bottom: 0 !important;
     box-shadow: 0 0 0 0 !important; }
+  body #dropdown1 {
+    padding: 15px;
+    -webkit-box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.08);
+    -moz-box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.08);
+    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.08); }
+    body #dropdown1 a {
+      line-height: 40px; }
+      body #dropdown1 a:hover {
+        background-color: transparent;
+        color: black; }
   body .faq {
     padding-top: 40px;
     padding-bottom: 200px; }
@@ -6719,7 +6729,8 @@ body {
         margin-bottom: 20px; }
       body .about-us .container .flex .about-us-text .btn-flat {
         padding: 0;
-        margin-top: 20px; }
+        margin-top: 20px;
+        color: #198400; }
         body .about-us .container .flex .about-us-text .btn-flat i {
           vertical-align: -5px; }
     body .about-us .container .flex .about-us-img {
@@ -6877,7 +6888,30 @@ body {
       body .service-detail .service-address .active {
         background-color: rgba(0, 0, 0, 0.05); }
   body .services {
-    padding-top: 100px; }
+    padding-top: 120px; }
+    body .services .flex:not(.collapsible-header) {
+      border-bottom: 1px solid #C8D3D5;
+      margin-bottom: 70px; }
+    body .services .flex .guarantee, body .services .flex .discount {
+      flex-basis: 25%;
+      padding: 30px;
+      color: white;
+      background-repeat: no-repeat;
+      background-position: right;
+      background-size: contain;
+      margin-bottom: 70px; }
+      body .services .flex .guarantee div:first-child, body .services .flex .discount div:first-child {
+        font-size: 14px; }
+      body .services .flex .guarantee div:last-child, body .services .flex .discount div:last-child {
+        font-size: 24px;
+        font-weight: bold; }
+    body .services .flex .guarantee {
+      background-color: #00BB22;
+      background-image: url("../img/guarantee-bg.png"); }
+    body .services .flex .discount {
+      margin-left: 40px;
+      background-color: black;
+      background-image: url("../img/discount.png"); }
     body .services .collapsible {
       -webkit-box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.1);
       -moz-box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.1);

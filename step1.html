@@ -19,8 +19,15 @@
     <li><a href="#!">three</a></li>
 </ul>
 <nav class="z-depth-0">
-    <div class="nav-wrapper white">
-        <a href="#!" class="brand-logo"><img src="img/logo.png"/></a>
+    <div class="nav-wrapper">
+        <a href="index.html" class="brand-logo"><img src="img/logo.png"/></a>
+
+        <ul id="location-mobile" class="dropdown-content">
+            <li><a href="#!">Bhopal</a></li>
+            <li><a href="#!">Indore</a></li>
+        </ul>
+        <a class="dropdown-trigger show-on-small right" href="#!" data-target="location-mobile" color="white">Bhopal<i class="material-icons right">keyboard_arrow_down</i></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
             <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Services<i class="material-icons right">keyboard_arrow_down</i></a></li>
             <li><a href="#">Become a professional</a></li>
@@ -50,14 +57,24 @@
                     </a>
                 </div>
             </div>
-            <div class="terms"">By signing up, you agree to our <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a></div>
-    </div>
+            <div class="terms">By signing up, you agree to our <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a></div>
+        </div>
     </div>
 </nav>
 
 
 <section class="services">
     <div class="container">
+        <div class="flex">
+            <div class="guarantee">
+                <div>Rest assured with</div>
+                <div>Aaramsey Guarantee</div>
+            </div>
+            <div class="discount">
+                <div>Book now and get</div>
+                <div>10% Off !</div>
+            </div>
+        </div>
         <ul class="collapsible expandable">
             <li>
                 <div class="collapsible-header flex"><img src="img/services/bathroom.png"/>Bathroom Deep Cleaning<i class="material-icons right">keyboard_arrow_down</i></div>

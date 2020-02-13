@@ -27,6 +27,20 @@ body{
     box-shadow: 0 0 0 0 !important;
   }
 
+  #dropdown1{
+    padding:15px;
+    -webkit-box-shadow: 0 3px 8px 0 rgba(0,0,0,0.08);
+    -moz-box-shadow: 0 3px 8px 0 rgba(0,0,0,0.08);
+    box-shadow: 0 3px 8px 0 rgba(0,0,0,0.08);
+    a{
+      line-height: 40px;
+      &:hover{
+        background-color: transparent;
+        color:black;
+      }
+    }
+  }
+
   .faq{
     padding-top: 40px;
     padding-bottom:200px;
@@ -266,6 +280,7 @@ body{
           .btn-flat{
             padding:0;
             margin-top:20px;
+            color:#198400;
             i{
               vertical-align:-5px;
             }
@@ -492,7 +507,38 @@ body{
 
 
   .services{
-    padding-top:100px;
+    padding-top:120px;
+    .flex:not(.collapsible-header){
+      border-bottom: 1px solid $border-color;
+      margin-bottom:70px;
+    }
+    .flex{
+      .guarantee,.discount{
+        flex-basis: 25%;
+        padding:30px;
+        color:white;
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: contain;
+        margin-bottom:70px;
+        div:first-child{
+          font-size: 14px;
+        }
+        div:last-child{
+          font-size: 24px;
+          font-weight: bold;
+        }
+      }
+      .guarantee{
+        background-color: #00BB22;
+        background-image: url("../img/guarantee-bg.png");
+      }
+      .discount{
+        margin-left:40px;
+        background-color: black;
+        background-image: url("../img/discount.png");
+      }
+    }
     .collapsible{
       -webkit-box-shadow: 0 3px 10px 0 rgba(0,0,0,0.10);
       -moz-box-shadow: 0 3px 10px 0 rgba(0,0,0,0.10);

@@ -3,7 +3,8 @@ $(document).ready(function(){
         fullWidth: true
     });
     $('.dropdown-trigger').dropdown({
-        coverTrigger: false
+        coverTrigger: false,
+        constrainWidth: false
     });
     $('.modal').modal();
     $('.collapsible').collapsible({accordion: false});

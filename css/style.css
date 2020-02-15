@@ -6582,7 +6582,8 @@ body {
       margin-bottom: 80px; }
     body .t-c div {
       margin-bottom: 150px;
-      line-height: 30px; }
+      line-height: 30px;
+      text-align: justify; }
       body .t-c div span {
         background-color: yellow; }
       body .t-c div strong {
@@ -7053,4 +7054,11 @@ body {
       order: 2; }
     body .about-us .container .flex .about-us-img {
       order: 1;
-      flex: 0 0 50%; } }
+      flex: 0 0 50%; }
+  body .services .flex:not(.collapsible-header) {
+    flex-wrap: wrap;
+    padding-bottom: 30px; }
+    body .services .flex:not(.collapsible-header) .guarantee, body .services .flex:not(.collapsible-header) .discount {
+      flex-basis: 100%;
+      margin-left: 0;
+      margin-bottom: 30px; } }

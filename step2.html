@@ -12,15 +12,46 @@
 
 <body>
 
-<ul id="dropdown1" class="dropdown-content">
-    <li><a href="#!">one</a></li>
-    <li><a href="#!">two</a></li>
-    <li class="divider"></li>
-    <li><a href="#!">three</a></li>
+
+<div id="dropdown1" class="dropdown-content">
+    <div class="flex">
+        <div>
+            <a href="#">Cleaning</a>
+            <a href="#">Plumber</a>
+            <a href="#">Electricians</a>
+            <a href="#">Carpenter</a>
+            <a href="#">Salon for Women</a>
+        </div>
+        <div>
+            <a href="#">Salon for Men</a>
+            <a href="#">Appliances & Electronics</a>
+            <a href="#">BRTS Bhopal</a>
+            <a href="#">RTO, Passwort & Consultancy</a>
+            <a href="#">CCTV & Video</a>
+        </div>
+        <div>
+            <a href="#">GPS Trackers</a>
+            <a href="#">Driver Services</a>
+            <a href="#">Event Management Services</a>
+            <a href="#">Paste Control</a>
+            <a href="#">Home Tutor & Project Work</a>
+        </div>
+    </div>
+</div>
+<ul class="sidenav" id="mobile-demo">
+    <li><a href="sass.html">Become a professional</a></li>
+    <li><a href="badges.html">Sign In / Sign up</a></li>
 </ul>
 <nav class="z-depth-0">
-    <div class="nav-wrapper white">
-        <a href="#!" class="brand-logo"><img src="img/logo.png"/></a>
+    <div class="nav-wrapper">
+        <a href="index.html" class="brand-logo"><img src="img/logo.png"/></a>
+
+        <ul id="location-mobile" class="dropdown-content">
+            <li><a href="#!">Bhopal</a></li>
+            <li><a href="#!">Indore</a></li>
+        </ul>
+        <a class="dropdown-trigger show-on-small right" href="#!" data-target="location-mobile" color="white">Bhopal<i class="material-icons right">keyboard_arrow_down</i></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
             <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Services<i class="material-icons right">keyboard_arrow_down</i></a></li>
             <li><a href="#">Become a professional</a></li>
@@ -51,10 +82,9 @@
                 </div>
             </div>
             <div class="terms">By signing up, you agree to our <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a></div>
-    </div>
+        </div>
     </div>
 </nav>
-
 
 <section class="service-detail">
     <div class="container">

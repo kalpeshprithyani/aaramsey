@@ -146,9 +146,12 @@ body{
           margin-top: 25px;
         }
       }
+      h4{
+        margin-bottom:40px;
+      }
       .mob-num{
         width:100%;
-        margin-top:50px;
+        margin-top:20px;
         background-color: white;
         -webkit-box-shadow: 0 3px 6px 0 rgba(0,0,0,0.05);
         -moz-box-shadow: 0 3px 6px 0 rgba(0,0,0,0.05);
@@ -160,6 +163,26 @@ body{
         }
         input{
           margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .history{
+    margin-top:100px;
+    #test1{
+      margin-top:40px;
+      &>.row{
+        background-color:white;
+        position: relative;
+        &>div{
+          padding:20px 0;
+        }
+        .pending{
+          position:absolute;
+          bottom:0;
+          right:20px;
+          opacity: 0.6;
         }
       }
     }
@@ -440,12 +463,15 @@ body{
       border-top: 1px solid $border-color;
       .service-detail-container{
         justify-content: space-between;
+        & > div{
+          flex-basis: 50%;
+        }
         .service-bookings,.service-stars{
           text-align: center;
           border:1px solid $border-color;
           padding:20px 10px;
           height:100px;
-          width:200px;
+          flex-basis: 50%;
           margin-left:20px;
           border-radius: 15px;
           .service-booking-number{
@@ -481,27 +507,58 @@ body{
     .service-address{
       margin-top:50px;
       .add-new-address,.address-block{
-        border: 1px solid $border-color;
-        border-radius: 10px;
+        padding:10px;
+        &>div{
+          border-radius: 10px;
+        }
       }
       .add-new-address{
         text-align: center;
-        padding:30px;
+        &>div{
+          border: 1px solid $border-color;
+        }
         i{
           font-size: 3em;
         }
       }
       .address-block{
-        padding:0;
-        margin-left:20px;
         label{
           width:100%;
           display: block;
-          padding:10px;
+          padding:15px;
+          span{
+            font-size:16px;
+            margin-bottom: 5px;
+          }
+          div{
+            opacity: 0.8;
+            i{
+              vertical-align: -7px;
+            }
+            span{
+              padding-left:39px;
+              display: block;
+            }
+            margin-top:15px;
+            font-size: 14px;
+          }
+        }
+      }
+      .address-block.active{
+        span{
+          color:black;
+        }
+        div{
+          color:black;
         }
       }
       .active{
-        background-color: rgba(0,0,0,0.05);
+        &>div{
+          background-color: white;
+          -webkit-box-shadow: 0px 3px 12px 0px rgba(0,0,0,0.11);
+          -moz-box-shadow: 0px 3px 12px 0px rgba(0,0,0,0.11);
+          box-shadow: 0px 3px 12px 0px rgba(0,0,0,0.11);
+        }
       }
     }
   }
@@ -636,6 +693,59 @@ body{
 
 @media only screen and (max-width: 600px) {
   body{
+    .service-detail{
+      .head{
+        margin: 0 0 30px 0;
+        .service-name{
+          font-size: 20px;
+        }
+        .back{
+          padding:8px 0 0 7px;
+          margin-right:10px;
+          width:40px;
+          height:40px;
+        }
+        & > .flex:nth-child(2){
+          flex-basis: 30%;
+          flex-wrap: wrap;
+          & > div,a{
+            flex: 0 0 100%;
+          }
+          a{
+            margin-left:0;
+          }
+          & > div{
+            text-align:right;
+          }
+          .service-category{
+            display: none;
+          }
+        }
+        .service-price{
+          font-size: 20px;
+          margin-right:5px;
+        }
+        .btn{
+          padding: 5px;
+        }
+      }
+
+      .service-ratings{
+        padding:40px 0 0 0;
+        .service-detail-container{
+          .service-features{
+            margin-top:15px;
+          }
+        }
+      }
+
+      .service-address{
+        .address-block{
+          margin-left:0;
+          margin-top:20px;
+        }
+      }
+    }
     nav{
       .brand-logo{
         left:40px;
@@ -762,6 +872,36 @@ body{
           flex-basis: 100%;
           margin-left:0;
           margin-bottom:30px;
+        }
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 992px) {
+  body{
+    .service-detail{
+      .service-ratings{
+        .service-detail-container{
+          flex-wrap: wrap;
+          & > div{
+            flex: 0 0 100%;
+          }
+          & > .flex{
+            flex-wrap: wrap;
+          }
+          .service-bookings,.service-stars{
+            flex: 0 0 100%;
+            margin-bottom:20px;
+          }
+        }
+      }
+    }
+    .services{
+      .flex{
+        .guarantee,.discount{
+          flex-basis: 50%;
         }
       }
     }

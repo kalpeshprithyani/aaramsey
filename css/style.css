@@ -6631,9 +6631,11 @@ body {
         body nav .modal .social img {
           margin-left: 30px;
           margin-top: 25px; }
+      body nav .modal h4 {
+        margin-bottom: 40px; }
       body nav .modal .mob-num {
         width: 100%;
-        margin-top: 50px;
+        margin-top: 20px;
         background-color: white;
         -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
         -moz-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
@@ -6644,6 +6646,20 @@ body {
           color: #6E8387; }
         body nav .modal .mob-num input {
           margin-bottom: 0; }
+  body .history {
+    margin-top: 100px; }
+    body .history #test1 {
+      margin-top: 40px; }
+      body .history #test1 > .row {
+        background-color: white;
+        position: relative; }
+        body .history #test1 > .row > div {
+          padding: 20px 0; }
+        body .history #test1 > .row .pending {
+          position: absolute;
+          bottom: 0;
+          right: 20px;
+          opacity: 0.6; }
   body .bg {
     margin-top: 60px;
     height: 60vh;
@@ -6843,12 +6859,14 @@ body {
       border-top: 1px solid #C8D3D5; }
       body .service-detail .service-ratings .service-detail-container {
         justify-content: space-between; }
+        body .service-detail .service-ratings .service-detail-container > div {
+          flex-basis: 50%; }
         body .service-detail .service-ratings .service-detail-container .service-bookings, body .service-detail .service-ratings .service-detail-container .service-stars {
           text-align: center;
           border: 1px solid #C8D3D5;
           padding: 20px 10px;
           height: 100px;
-          width: 200px;
+          flex-basis: 50%;
           margin-left: 20px;
           border-radius: 15px; }
           body .service-detail .service-ratings .service-detail-container .service-bookings .service-booking-number, body .service-detail .service-ratings .service-detail-container .service-stars .service-booking-number {
@@ -6872,22 +6890,40 @@ body {
     body .service-detail .service-address {
       margin-top: 50px; }
       body .service-detail .service-address .add-new-address, body .service-detail .service-address .address-block {
-        border: 1px solid #C8D3D5;
-        border-radius: 10px; }
+        padding: 10px; }
+        body .service-detail .service-address .add-new-address > div, body .service-detail .service-address .address-block > div {
+          border-radius: 10px; }
       body .service-detail .service-address .add-new-address {
-        text-align: center;
-        padding: 30px; }
+        text-align: center; }
+        body .service-detail .service-address .add-new-address > div {
+          border: 1px solid #C8D3D5; }
         body .service-detail .service-address .add-new-address i {
           font-size: 3em; }
-      body .service-detail .service-address .address-block {
-        padding: 0;
-        margin-left: 20px; }
-        body .service-detail .service-address .address-block label {
-          width: 100%;
-          display: block;
-          padding: 10px; }
-      body .service-detail .service-address .active {
-        background-color: rgba(0, 0, 0, 0.05); }
+      body .service-detail .service-address .address-block label {
+        width: 100%;
+        display: block;
+        padding: 15px; }
+        body .service-detail .service-address .address-block label span {
+          font-size: 16px;
+          margin-bottom: 5px; }
+        body .service-detail .service-address .address-block label div {
+          opacity: 0.8;
+          margin-top: 15px;
+          font-size: 14px; }
+          body .service-detail .service-address .address-block label div i {
+            vertical-align: -7px; }
+          body .service-detail .service-address .address-block label div span {
+            padding-left: 39px;
+            display: block; }
+      body .service-detail .service-address .address-block.active span {
+        color: black; }
+      body .service-detail .service-address .address-block.active div {
+        color: black; }
+      body .service-detail .service-address .active > div {
+        background-color: white;
+        -webkit-box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.11);
+        -moz-box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.11);
+        box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.11); }
   body .services {
     padding-top: 120px; }
     body .services .flex:not(.collapsible-header) {
@@ -6982,6 +7018,38 @@ body {
     display: flex; }
 
 @media only screen and (max-width: 600px) {
+  body .service-detail .head {
+    margin: 0 0 30px 0; }
+    body .service-detail .head .service-name {
+      font-size: 20px; }
+    body .service-detail .head .back {
+      padding: 8px 0 0 7px;
+      margin-right: 10px;
+      width: 40px;
+      height: 40px; }
+    body .service-detail .head > .flex:nth-child(2) {
+      flex-basis: 30%;
+      flex-wrap: wrap; }
+      body .service-detail .head > .flex:nth-child(2) > div, body .service-detail .head > .flex:nth-child(2) a {
+        flex: 0 0 100%; }
+      body .service-detail .head > .flex:nth-child(2) a {
+        margin-left: 0; }
+      body .service-detail .head > .flex:nth-child(2) > div {
+        text-align: right; }
+      body .service-detail .head > .flex:nth-child(2) .service-category {
+        display: none; }
+    body .service-detail .head .service-price {
+      font-size: 20px;
+      margin-right: 5px; }
+    body .service-detail .head .btn, body .service-detail .head .btn-large, body .service-detail .head .btn-small {
+      padding: 5px; }
+  body .service-detail .service-ratings {
+    padding: 40px 0 0 0; }
+    body .service-detail .service-ratings .service-detail-container .service-features {
+      margin-top: 15px; }
+  body .service-detail .service-address .address-block {
+    margin-left: 0;
+    margin-top: 20px; }
   body nav .brand-logo {
     left: 40px;
     transform: none; }
@@ -7062,3 +7130,16 @@ body {
       flex-basis: 100%;
       margin-left: 0;
       margin-bottom: 30px; } }
+
+@media only screen and (max-width: 992px) {
+  body .service-detail .service-ratings .service-detail-container {
+    flex-wrap: wrap; }
+    body .service-detail .service-ratings .service-detail-container > div {
+      flex: 0 0 100%; }
+    body .service-detail .service-ratings .service-detail-container > .flex {
+      flex-wrap: wrap; }
+    body .service-detail .service-ratings .service-detail-container .service-bookings, body .service-detail .service-ratings .service-detail-container .service-stars {
+      flex: 0 0 100%;
+      margin-bottom: 20px; }
+  body .services .flex .guarantee, body .services .flex .discount {
+    flex-basis: 50%; } }

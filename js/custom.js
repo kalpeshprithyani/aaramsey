@@ -16,10 +16,12 @@ $(document).ready(function(){
     $('.sidenav').sidenav();
     $('.timepicker').timepicker();
 
-    $('.with-gap[checked]').parent().parent().addClass('active');
+    $('.with-gap[checked]').parent().parent().parent().addClass('active');
     $(document).on('click', '.address-block', function(e) {
         const $el = $(this);
         $el.addClass("active").siblings().removeClass('active');
     });
+
+    $('.tabs').tabs();
 
 });

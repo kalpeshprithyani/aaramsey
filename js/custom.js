@@ -24,4 +24,15 @@ $(document).ready(function(){
 
     $('.tabs').tabs();
 
+
+    $(".truncate-dot").dotdotdot({
+        height: 50,
+        fallbackToLetter: true,
+        watch: true,
+    });
+
+    $('select').formSelect({
+        classes:'padding-select'
+    });
+
 });

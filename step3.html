@@ -51,7 +51,7 @@
             <li><a href="#!">Bhopal</a></li>
             <li><a href="#!">Indore</a></li>
         </ul>
-        <a class="dropdown-trigger show-on-small right" href="#!" data-target="location-mobile" color="white">Bhopal<i class="material-icons right">keyboard_arrow_down</i></a>
+        <a class="dropdown-trigger show-on-medium-and-down right" href="#!" data-target="location-mobile" color="white">Bhopal<i class="material-icons right">keyboard_arrow_down</i></a>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
             <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Services<i class="material-icons right">keyboard_arrow_down</i></a></li>
@@ -147,39 +147,137 @@
         <div class="service-address">
             <div style="margin-bottom:10px;">Select Address:</div>
             <div class="row">
-                <div class="col s12 l3 add-new-address">
-                    <div>
+                <div class="col s12 m6 l3 add-new-address">
+                    <a class="valign-wrapper modal-trigger" href="#modal-address">
                         <i class="material-icons">add</i>
                         <div>Add New</div>
+                    </a>
+                    <!-- Modal Structure -->
+                    <div id="modal-address" class="modal">
+                        <div class="modal-content black-text">
+                            <i class="material-icons modal-close right">close</i>
+                            <h4>Add New Address</h4>
+                            <div class="location-radio">
+                                <p>
+                                    <label>
+                                        <input class="with-gap" name="group1" type="radio" checked />
+                                        <span>Home</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                        <input class="with-gap" name="group1" type="radio"  />
+                                        <span>Office</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                        <input class="with-gap" name="group1" type="radio"  />
+                                        <span>Other</span>
+                                    </label>
+                                </p>
+                            </div>
+                            <div class="input-field city-select">
+                                <select>
+                                    <option value="" disabled selected>Select City</option>
+                                    <option value="1">Bhopal</option>
+                                    <option value="2">Indore</option>
+                                </select>
+                            </div>
+                            <div class="flex">
+                                <div class="input-field">
+                                    <input id="house_no" type="text" class="validate">
+                                    <label for="house_no">House Number</label>
+                                </div>
+                                <div class="input-field">
+                                    <input id="society" type="text" class="validate">
+                                    <label for="society">Society</label>
+                                </div>
+                            </div>
+                            <div class="input-field">
+                                <input id="full_add" type="text" class="validate">
+                                <label for="full_add">Full Address</label>
+                            </div>
+                            <div class="input-field">
+                                <input id="landmark" type="text" class="validate">
+                                <label for="landmark">Landmark</label>
+                            </div>
+                            <div class="input-field">
+                                <input id="pin_code" type="text" class="validate">
+                                <label for="pin_code">Pin Code</label>
+                            </div>
+
+                            <div class="social flex">
+                                <div>
+                                    <a class="waves-effect waves-light btn">Add Address</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col s12 l3 address-block">
+                <div class="col s12 m6 l3 address-block">
                     <div>
                         <label>
                             <input class="with-gap" name="group3" type="radio" checked />
-                            <span>Home</span>
-                            <div><i class="material-icons left">location_on</i> <span>e124 arera colony gaksh new campion</span></div>
-                            <div><i class="material-icons">smartphone</i> 5454545454</div>
+                            <span>Home
+                                <div><i class="material-icons left">location_on</i> <p class="truncate-dot">e124 arera colony gaksh new campion</p></div>
+                                <div><i class="material-icons left">smartphone</i> <p>5454545454</p></div>
+                            </span>
                         </label>
                     </div>
                 </div>
-                <div class="col s12 l3 address-block">
+                <div class="col s12 m6 l3 address-block">
                     <div>
                         <label>
                             <input class="with-gap" name="group3" type="radio" />
-                            <span>Home</span>
-                            <div><i class="material-icons left">location_on</i> <span>e124 arera colony gaksh new campion</span></div>
-                            <div><i class="material-icons">smartphone</i> 5454545454</div>
+                            <span>Home
+                                <div><i class="material-icons left">location_on</i> <p class="truncate-dot">e124 arera colony gaksh new campion</p></div>
+                                <div><i class="material-icons left">smartphone</i> <p>5454545454</p></div>
+                            </span>
                         </label>
                     </div>
                 </div>
-                <div class="col s12  l3 address-block">
+                <div class="col s12 m6 l3 address-block">
                     <div>
                         <label>
                             <input class="with-gap" name="group3" type="radio" />
-                            <span>Home</span>
-                            <div><i class="material-icons left">location_on</i> <span>e124 arera colony gaksh new campion</span></div>
-                            <div><i class="material-icons">smartphone</i> 5454545454</div>
+                            <span>Home
+                                <div><i class="material-icons left">location_on</i> <p class="truncate-dot">e124 arera colony gaksh new campion e124 arera colony gaksh new campion</p></div>
+                                <div><i class="material-icons left">smartphone</i> <p>5454545454</p></div>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+                <div class="col s12 m6 l3 address-block">
+                    <div>
+                        <label>
+                            <input class="with-gap" name="group3" type="radio" />
+                            <span>Home
+                                <div><i class="material-icons left">location_on</i> <p class="truncate-dot">e124 arera colony gaksh new campion</p></div>
+                                <div><i class="material-icons left">smartphone</i> <p>5454545454</p></div>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+                <div class="col s12 m6 l3 address-block">
+                    <div>
+                        <label>
+                            <input class="with-gap" name="group3" type="radio" />
+                            <span>Home
+                                <div><i class="material-icons left">location_on</i> <p class="truncate-dot">e124 arera colony gaksh new campion</p></div>
+                                <div><i class="material-icons left">smartphone</i> <p>5454545454</p></div>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+                <div class="col s12 m6 l3 address-block">
+                    <div>
+                        <label>
+                            <input class="with-gap" name="group3" type="radio" />
+                            <span>Home
+                                <div><i class="material-icons left">location_on</i> <p class="truncate-dot">e124 arera colony gaksh new campion</p></div>
+                                <div><i class="material-icons left">smartphone</i> <p>5454545454</p></div>
+                            </span>
                         </label>
                     </div>
                 </div>
@@ -190,6 +288,7 @@
 
 <!--JavaScript at end of body for optimized loading-->
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.dotdotdot/4.0.11/dotdotdot.js" integrity="sha256-/UzWtksdv+cNzoox3Q0qwhrAV1FyMvBaeTa6hySD2JM=" crossorigin="anonymous"></script>
 <script type="text/javascript" src="js/bin/materialize.min.js"></script>
 <script type="text/javascript" src="js/custom.js"></script>
 </body>

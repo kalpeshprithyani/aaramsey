@@ -6887,6 +6887,19 @@ body {
         body .service-detail .service-ratings .service-features ul li {
           list-style-type: disc;
           margin-bottom: 20px; }
+      body .service-detail .service-ratings .service-features .datepicker-table td.is-today {
+        color: #00aa1a; }
+      body .service-detail .service-ratings .service-features .datepicker-table td.is-selected {
+        background-color: #00E824;
+        color: black; }
+      body .service-detail .service-ratings .service-features .datepicker-cancel, body .service-detail .service-ratings .service-features .datepicker-done, body .service-detail .service-ratings .service-features .timepicker-close {
+        color: #00aa1a; }
+      body .service-detail .service-ratings .service-features .datepicker-date-display, body .service-detail .service-ratings .service-features .timepicker-digital-display {
+        background-color: black; }
+      body .service-detail .service-ratings .service-features .timepicker-canvas-bg, body .service-detail .service-ratings .service-features .timepicker-canvas-bearing {
+        fill: #00E824; }
+      body .service-detail .service-ratings .service-features .timepicker-canvas line {
+        stroke: #00E824; }
     body .service-detail .service-address {
       margin-top: 50px; }
       body .service-detail .service-address .add-new-address, body .service-detail .service-address .address-block {

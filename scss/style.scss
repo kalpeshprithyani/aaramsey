@@ -501,6 +501,25 @@ body{
             margin-bottom:20px;
           }
         }
+        .datepicker-table td.is-today{
+          color: #00aa1a;
+        }
+        .datepicker-table td.is-selected{
+          background-color: #00E824;
+          color:black;
+        }
+        .datepicker-cancel,.datepicker-done,.timepicker-close,{
+          color:#00aa1a;
+        }
+        .datepicker-date-display,.timepicker-digital-display,{
+          background-color: black;
+        }
+        .timepicker-canvas-bg,.timepicker-canvas-bearing{
+          fill:#00E824;
+        }
+        .timepicker-canvas line{
+          stroke:#00E824
+        }
       }
     }
 

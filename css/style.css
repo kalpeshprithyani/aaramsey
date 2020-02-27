@@ -6660,6 +6660,26 @@ body {
           bottom: 0;
           right: 20px;
           opacity: 0.6; }
+  body .bg.bg2 {
+    background-image: url("../img/bg2.jpg");
+    background-repeat: no-repeat;
+    background-position: right; }
+    body .bg.bg2 .search-box {
+      background-color: transparent;
+      box-shadow: none; }
+      body .bg.bg2 .search-box a {
+        padding: 15px 20px;
+        box-shadow: none; }
+        body .bg.bg2 .search-box a:hover {
+          -webkit-box-shadow: 0px 8px 20px 0px rgba(0, 172, 30, 0.2);
+          -moz-box-shadow: 0px 8px 20px 0px rgba(0, 172, 30, 0.2);
+          box-shadow: 0px 8px 20px 0px rgba(0, 172, 30, 0.2); }
+      body .bg.bg2 .search-box .btn:first-child, body .bg.bg2 .search-box .btn-large:first-child, body .bg.bg2 .search-box .btn-small:first-child {
+        background-color: #00E82A;
+        margin-right: 20px; }
+      body .bg.bg2 .search-box .btn:last-child, body .bg.bg2 .search-box .btn-large:last-child, body .bg.bg2 .search-box .btn-small:last-child {
+        border: 2px solid #00E82A;
+        background-color: transparent; }
   body .bg {
     margin-top: 60px;
     height: 60vh;
@@ -6722,17 +6742,26 @@ body {
     body .how-works .steps-subtext div {
       flex-basis: 20%;
       text-align: center; }
+  body .how-works .steps-subtext.steps-subtext2 {
+    margin: 0; }
   body .how-works .flex.illus {
     margin: 100px 100px 10px 100px;
     justify-content: space-between; }
     body .how-works .flex.illus .steps {
-      flex-basis: 20%;
+      flex-basis: 18%;
       padding: 30px 0;
       background-color: white; }
       body .how-works .flex.illus .steps img {
         margin: 0 auto 30px auto;
         display: block;
         height: 60px; }
+      body .how-works .flex.illus .steps div {
+        color: #9b9b9b; }
+  body .how-works .flex.illus2 {
+    margin: 100px 0 10px 0;
+    justify-content: space-around; }
+    body .how-works .flex.illus2 .steps {
+      padding: 30px 10px; }
   body .about-us .container .border {
     width: 100%;
     margin: auto;
@@ -7090,6 +7119,29 @@ body {
   body .flex {
     display: flex; }
 
+@media only screen and (max-width: 992px) {
+  body .service-detail .service-ratings .service-detail-container {
+    flex-wrap: wrap; }
+    body .service-detail .service-ratings .service-detail-container > div {
+      flex: 0 0 100%; }
+    body .service-detail .service-ratings .service-detail-container > .flex {
+      flex-wrap: wrap; }
+    body .service-detail .service-ratings .service-detail-container .service-bookings, body .service-detail .service-ratings .service-detail-container .service-stars {
+      flex: 0 0 100%;
+      margin-bottom: 20px; }
+  body .service-detail .service-address .add-new-address a {
+    height: 170px; }
+  body .service-detail .address-block > div {
+    min-height: 170px; }
+  body .services .flex .guarantee, body .services .flex .discount {
+    flex-basis: 50%; }
+  body .how-works .flex.illus2 {
+    flex-wrap: wrap; }
+    body .how-works .flex.illus2 .steps {
+      margin-top: 20px;
+      flex-basis: 30%;
+      flex-shrink: 0; } }
+
 @media only screen and (max-width: 600px) {
   body .service-detail .head {
     margin: 0 0 30px 0; }
@@ -7162,6 +7214,8 @@ body {
         font-size: 30px;
         padding-left: 15px;
         padding-top: 7px; }
+  body .bg.bg2 {
+    background-image: none; }
   body .features .flex {
     flex-wrap: wrap; }
     body .features .flex .top-col {
@@ -7176,7 +7230,7 @@ body {
     margin: 30px 0 0 0;
     flex-wrap: wrap; }
     body .how-works .flex.illus .steps {
-      margin-top: 10px;
+      margin-top: 20px;
       flex-basis: 48%;
       flex-shrink: 0; }
   body .how-works .steps-subtext {
@@ -7209,20 +7263,3 @@ body {
       flex-basis: 100%;
       margin-left: 0;
       margin-bottom: 30px; } }
-
-@media only screen and (max-width: 992px) {
-  body .service-detail .service-ratings .service-detail-container {
-    flex-wrap: wrap; }
-    body .service-detail .service-ratings .service-detail-container > div {
-      flex: 0 0 100%; }
-    body .service-detail .service-ratings .service-detail-container > .flex {
-      flex-wrap: wrap; }
-    body .service-detail .service-ratings .service-detail-container .service-bookings, body .service-detail .service-ratings .service-detail-container .service-stars {
-      flex: 0 0 100%;
-      margin-bottom: 20px; }
-  body .service-detail .service-address .add-new-address a {
-    height: 170px; }
-  body .service-detail .address-block > div {
-    min-height: 170px; }
-  body .services .flex .guarantee, body .services .flex .discount {
-    flex-basis: 50%; } }

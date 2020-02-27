@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/style.css"  media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+</head>
+
+<body>
+
+<div id="dropdown1" class="dropdown-content">
+    <div class="flex">
+        <div>
+            <a href="step1.html">Cleaning</a>
+            <a href="step1.html">Plumber</a>
+            <a href="step1.html">Electricians</a>
+            <a href="step1.html">Carpenter</a>
+            <a href="step1.html">Salon for Women</a>
+        </div>
+        <div>
+            <a href="step1.html">Salon for Men</a>
+            <a href="step1.html">Appliances & Electronics</a>
+            <a href="step1.html">BRTS Bhopal</a>
+            <a href="step1.html">RTO, Passwort & Consultancy</a>
+            <a href="step1.html">CCTV & Video</a>
+        </div>
+        <div>
+            <a href="step1.html">GPS Trackers</a>
+            <a href="step1.html">Driver Services</a>
+            <a href="step1.html">Event Management Services</a>
+            <a href="step1.html">Paste Control</a>
+            <a href="step1.html">Home Tutor & Project Work</a>
+        </div>
+    </div>
+</div>
+
+<ul id="dropdown2" class="dropdown-content">
+    <li><a href="#!">Edit Profile</a></li>
+    <li><a href="#!">Contact Us</a></li>
+    <li><a href="#!">Privacy Policy</a></li>
+    <li><a href="#!">About Us</a></li>
+    <li><a href="#!">FAQs</a></li>
+    <li><a href="#!">Terms</a></li>
+    <li class="divider"></li>
+    <li><a href="#!">Sign Out</a></li>
+</ul>
+<ul class="sidenav" id="mobile-demo">
+    <li><a href="sass.html">Become a professional</a></li>
+    <li><a class="modal-trigger" href="#modal1">Log In</a></li>
+    <li><a class="modal-trigger" href="#modal2">Sign up</a></li>
+</ul>
+<nav class="z-depth-0">
+    <div class="nav-wrapper">
+        <a href="index.html" class="brand-logo"><img src="img/logo.png"/></a>
+
+        <ul id="location-mobile" class="dropdown-content">
+            <li><a href="#!">Bhopal</a></li>
+            <li><a href="#!">Indore</a></li>
+        </ul>
+        <a class="dropdown-trigger hide-on-large-only right" href="#!" data-target="location-mobile" color="white">Bhopal<i class="material-icons right">keyboard_arrow_down</i></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+            <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Services<i class="material-icons right">keyboard_arrow_down</i></a></li>
+            <li><a href="history.html">Requests</a></li>
+            <li><a class="dropdown-trigger profile-pic" href="#!" data-target="dropdown2"><img src="img/Rectangle%20283@3x.png"/></a></li>
+            <!-- Dropdown Trigger -->
+        </ul>
+    </div>
+
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+        <div class="modal-content black-text">
+            <i class="material-icons modal-close right">close</i>
+            <h4>Sign In</h4>
+            <div class="flex mob-num">
+                <i class="material-icons right">smartphone</i><input placeholder="Mobile Number"/>
+            </div>
+            <div class="social flex">
+                <div>
+                    <a class="waves-effect waves-light btn">Generate OTP</a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="img/fb-color.png"/>
+                    </a>
+                    <a href="#">
+                        <img src="img/google.png"/>
+                    </a>
+                </div>
+            </div>
+            <div class="terms">By signing up, you agree to our <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a></div>
+        </div>
+    </div>
+</nav>
+
+
+<section class="edit-profile container">
+    <div class="profile-pic-edit row">
+        <div class="col m6">
+            <img src="img/Rectangle%20283@3x.png"/>
+        </div>
+        <div class="col m6" style="margin-top:50px;">
+            <div class="row">
+                <div class="col s4">
+                    <div>Name</div>
+                </div>
+                <div class="col s8">
+                    Rahul Sharma<a class="modal-trigger" href="#modal2"><i class="material-icons right">edit</i></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s4">
+                    <div>Contact</div>
+                </div>
+                <div class="col s8">
+                    9894445789<a class="modal-trigger" href="#modal3"><i class="material-icons right">edit</i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr style="border: 0;border-top: 1px solid #d6d6d6;margin-top:50px;"/>
+    <div class="row service-address">
+        <div style="margin-bottom:50px;">Manage Address:</div>
+
+        <div class="row">
+            <div class="col s12 m6 l3 add-new-address">
+                <a class="valign-wrapper modal-trigger" href="#modal-address">
+                    <i class="material-icons">add</i>
+                    <div>Add New</div>
+                </a>
+                <!-- Modal Structure -->
+                <div id="modal-address" class="modal">
+                    <div class="modal-content black-text">
+                        <i class="material-icons modal-close right">close</i>
+                        <h4>Add New Address</h4>
+                        <div class="location-radio">
+                            <p>
+                                <label>
+                                    <input class="with-gap" name="group1" type="radio" checked />
+                                    <span>Home</span>
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    <input class="with-gap" name="group1" type="radio"  />
+                                    <span>Office</span>
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    <input class="with-gap" name="group1" type="radio"  />
+                                    <span>Other</span>
+                                </label>
+                            </p>
+                        </div>
+                        <div class="input-field city-select">
+                            <select>
+                                <option value="" disabled selected>Select City</option>
+                                <option value="1">Bhopal</option>
+                                <option value="2">Indore</option>
+                            </select>
+                        </div>
+                        <div class="flex">
+                            <div class="input-field">
+                                <input id="house_no" type="text" class="validate">
+                                <label for="house_no">House Number</label>
+                            </div>
+                            <div class="input-field">
+                                <input id="society" type="text" class="validate">
+                                <label for="society">Society</label>
+                            </div>
+                        </div>
+                        <div class="input-field">
+                            <input id="full_add" type="text" class="validate">
+                            <label for="full_add">Full Address</label>
+                        </div>
+                        <div class="input-field">
+                            <input id="landmark" type="text" class="validate">
+                            <label for="landmark">Landmark</label>
+                        </div>
+                        <div class="input-field">
+                            <input id="pin_code" type="text" class="validate">
+                            <label for="pin_code">Pin Code</label>
+                        </div>
+
+                        <div class="social flex">
+                            <div>
+                                <a class="waves-effect waves-light btn">Add Address</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6 l3 address-block">
+                <div>
+                    <label>
+                        <input class="with-gap" name="group3" type="radio" checked />
+                        <span>Home
+                                <div><i class="material-icons left">location_on</i> <p class="truncate-dot">e124 arera colony gaksh new campion</p></div>
+                                <div><i class="material-icons left">smartphone</i> <p>5454545454</p></div>
+                            </span>
+                    </label>
+                </div>
+            </div>
+            <div class="col s12 m6 l3 address-block">
+                <div>
+                    <label>
+                        <input class="with-gap" name="group3" type="radio" />
+                        <span>Home
+                                <div><i class="material-icons left">location_on</i> <p class="truncate-dot">e124 arera colony gaksh new campion</p></div>
+                                <div><i class="material-icons left">smartphone</i> <p>5454545454</p></div>
+                            </span>
+                    </label>
+                </div>
+            </div>
+            <div class="col s12 m6 l3 address-block">
+                <div>
+                    <label>
+                        <input class="with-gap" name="group3" type="radio" />
+                        <span>Home
+                                <div><i class="material-icons left">location_on</i> <p class="truncate-dot">e124 arera colony gaksh new campion e124 arera colony gaksh new campion</p></div>
+                                <div><i class="material-icons left">smartphone</i> <p>5454545454</p></div>
+                            </span>
+                    </label>
+                </div>
+            </div>
+            <div class="col s12 m6 l3 address-block">
+                <div>
+                    <label>
+                        <input class="with-gap" name="group3" type="radio" />
+                        <span>Home
+                                <div><i class="material-icons left">location_on</i> <p class="truncate-dot">e124 arera colony gaksh new campion</p></div>
+                                <div><i class="material-icons left">smartphone</i> <p>5454545454</p></div>
+                            </span>
+                    </label>
+                </div>
+            </div>
+            <div class="col s12 m6 l3 address-block">
+                <div>
+                    <label>
+                        <input class="with-gap" name="group3" type="radio" />
+                        <span>Home
+                                <div><i class="material-icons left">location_on</i> <p class="truncate-dot">e124 arera colony gaksh new campion</p></div>
+                                <div><i class="material-icons left">smartphone</i> <p>5454545454</p></div>
+                            </span>
+                    </label>
+                </div>
+            </div>
+            <div class="col s12 m6 l3 address-block">
+                <div>
+                    <label>
+                        <input class="with-gap" name="group3" type="radio" />
+                        <span>Home
+                                <div><i class="material-icons left">location_on</i> <p class="truncate-dot">e124 arera colony gaksh new campion</p></div>
+                                <div><i class="material-icons left">smartphone</i> <p>5454545454</p></div>
+                            </span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modal2" class="modal">
+        <div class="modal-content black-text">
+            <h4>Name</h4>
+            <div class="flex mob-num">
+                <input placeholder="Rahul Sharma"/>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cancel</a>
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Save</a>
+        </div>
+    </div>
+    <div id="modal3" class="modal">
+        <div class="modal-content black-text">
+            <h4>Name</h4>
+            <div class="flex mob-num">
+                <input placeholder="Rahul Sharma"/>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cancel</a>
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Save</a>
+        </div>
+    </div>
+</section>
+
+
+<footer>
+    <div class="container">
+        <div class="flex">
+            <div class="footer-categories">
+                <a href="#">Cleaning</a>
+                <a href="#">Plumber</a>
+                <a href="#">Electrician</a>
+                <a href="#">Carpenter</a>
+            </div>
+            <div class="footer-categories">
+                <a href="#">Salon for Women</a>
+                <a href="#">Salon for Men</a>
+                <a href="#">Appliances & Electronics</a>
+                <a href="#">BRTS Bhopal</a>
+            </div>
+            <div class="footer-categories">
+                <a href="#">RTO, Passport & Consultancy</a>
+                <a href="#">CCTV & Video</a>
+                <a href="#">GPS Trackers</a>
+                <a href="#">Driver Services</a>
+            </div>
+            <div class="footer-categories">
+                <a href="#">Event Management Services</a>
+                <a href="#">Pest Control</a>
+                <a href="#">Home tutor & project work</a>
+            </div>
+        </div>
+        <div class="footer-footer flex">
+            <div class="flex">
+                <a href="#"><img src="img/logo.png"/></a>
+                <div style="margin-left:20px;">© 2020</div>
+            </div>
+            <div class="flex">
+                <a href="#">About Us</a>
+                <a href="faq.html">FAQs</a>
+                <a href="t&c.html">Terms & Conditions</a>
+                <a href="policy.html">Policy</a>
+                <div class="social">
+                    <a class="social" href="#"><img src="img/fb.png"/></a>
+                    <a class="social" href="#"><img src="img/insta.png"/></a>
+                    <a class="social" href="#"><img src="img/twitter.png"/></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!--JavaScript at end of body for optimized loading-->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.dotdotdot/4.0.11/dotdotdot.js" integrity="sha256-/UzWtksdv+cNzoox3Q0qwhrAV1FyMvBaeTa6hySD2JM=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/bin/materialize.min.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+</body>
+</html>

@@ -6570,6 +6570,20 @@ body {
         body #dropdown2 li:hover a {
           color: black;
           background-color: transparent; }
+  body .payment-error {
+    margin-top: 100px;
+    min-height: 60vh; }
+    body .payment-error > div {
+      background-color: #efe2e2;
+      padding: 20px 20px 40px 30px;
+      border-radius: 10px; }
+  body .payment-success {
+    margin-top: 100px;
+    min-height: 60vh; }
+    body .payment-success > div {
+      background-color: #e3efe2;
+      padding: 20px 20px 40px 30px;
+      border-radius: 10px; }
   body .edit-profile {
     margin-top: 100px;
     margin-bottom: 100px; }

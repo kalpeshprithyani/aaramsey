@@ -74,10 +74,21 @@ body{
 
   .payment-success{
     margin-top:100px;
-    &>div{
+    &>div:first-child{
       background-color: #e3efe2;
       padding:20px 20px 40px 30px;
       border-radius:10px;
+    }
+    .payment-details-tag{
+      padding:40px 20px 0 30px;
+      color:gray;
+    }
+    .payment-details{
+      padding:20px 20px 20px 30px;
+      line-height: 28px;
+      div{
+        flex-grow: 1;
+      }
     }
     min-height: 60vh;
   }

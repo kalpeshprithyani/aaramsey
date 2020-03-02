@@ -6580,10 +6580,18 @@ body {
   body .payment-success {
     margin-top: 100px;
     min-height: 60vh; }
-    body .payment-success > div {
+    body .payment-success > div:first-child {
       background-color: #e3efe2;
       padding: 20px 20px 40px 30px;
       border-radius: 10px; }
+    body .payment-success .payment-details-tag {
+      padding: 40px 20px 0 30px;
+      color: gray; }
+    body .payment-success .payment-details {
+      padding: 20px 20px 20px 30px;
+      line-height: 28px; }
+      body .payment-success .payment-details div {
+        flex-grow: 1; }
   body .edit-profile {
     margin-top: 100px;
     margin-bottom: 100px; }

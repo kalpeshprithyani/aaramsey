@@ -1,7 +1,13 @@
 $(document).ready(function(){
-    $('.carousel.carousel-slider').carousel({
+    $('#testimonial-carousel').carousel({
         fullWidth: true
     });
+
+    $('#discount-banner-carousel').carousel({
+        fullWidth: true,
+        indicators: true
+    });
+
     $('.dropdown-trigger').dropdown({
         coverTrigger: false,
         constrainWidth: false
@@ -25,14 +31,14 @@ $(document).ready(function(){
     $('.tabs').tabs();
 
 
+    $('select').formSelect({
+        classes:'padding-select'
+    });
+    
     $(".truncate-dot").dotdotdot({
         height: 50,
         fallbackToLetter: true,
         watch: true,
-    });
-
-    $('select').formSelect({
-        classes:'padding-select'
     });
 
 });

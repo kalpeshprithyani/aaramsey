@@ -41,6 +41,13 @@ body{
     }
   }
 
+  .carousel .indicators .indicator-item{
+    background-color: rgba(0,0,0,0.4);
+  }
+  .carousel .indicators .indicator-item.active{
+    background-color: black;
+  }
+
   #dropdown2{
     -webkit-box-shadow: 0 3px 8px 0 rgba(0,0,0,0.08);
     -moz-box-shadow: 0 3px 8px 0 rgba(0,0,0,0.08);
@@ -366,6 +373,10 @@ body{
         color:black;
       }
     }
+  }
+
+  .discount-banner{
+    margin-top:200px;
   }
 
   .how-works{
@@ -1098,6 +1109,14 @@ body{
         }
       }
     }
+
+    .discount-banner{
+      margin-top:100px;
+    }
+    #discount-banner-carousel{
+      height:500px !important;
+    }
+
     .how-works{
       .container{
         padding:120px 0;

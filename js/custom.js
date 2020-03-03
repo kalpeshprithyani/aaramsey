@@ -5,8 +5,13 @@ $(document).ready(function(){
 
     $('#discount-banner-carousel').carousel({
         fullWidth: true,
-        indicators: true
+        indicators: true,
+        duration:150
     });
+
+    setInterval(()=>{
+        $('#discount-banner-carousel').carousel('next')
+    },4000);
 
     $('.dropdown-trigger').dropdown({
         coverTrigger: false,

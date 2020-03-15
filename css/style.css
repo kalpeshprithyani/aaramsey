@@ -6743,7 +6743,6 @@ body {
         border: 2px solid #00E82A;
         background-color: transparent; }
   body .bg {
-    margin-top: 60px;
     height: 60vh;
     background-image: url("../img/bg.jpg");
     background-repeat: no-repeat;
@@ -6794,7 +6793,9 @@ body {
       body .categories a:hover {
         color: black; }
   body .discount-banner {
-    margin-top: 200px; }
+    margin-top: 70px;
+    padding: 50px 0;
+    background-color: white; }
   body .how-works .container {
     padding: 200px 0;
     text-align: center; }
@@ -7102,7 +7103,7 @@ body {
       background-repeat: no-repeat;
       background-position: right;
       background-size: contain;
-      margin-bottom: 70px; }
+      margin-bottom: 50px; }
       body .services .flex .guarantee div:first-child, body .services .flex .discount div:first-child {
         font-size: 14px; }
       body .services .flex .guarantee div:last-child, body .services .flex .discount div:last-child {
@@ -7116,6 +7117,10 @@ body {
       background-color: black;
       background-image: url("../img/discount.png"); }
     body .services .collapsible {
+      box-shadow: none;
+      border: 0; }
+    body .services .collapsible li {
+      margin-top: 20px;
       -webkit-box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.1);
       -moz-box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.1);
       box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.1); }

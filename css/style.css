@@ -7121,14 +7121,18 @@ body {
       border: 0; }
     body .services .collapsible li {
       margin-top: 20px;
-      -webkit-box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.1);
-      -moz-box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.1);
-      box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.1); }
+      border-radius: 10px;
+      -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
+      -moz-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
+      box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05); }
     body .services .collapsible-header {
       align-items: center;
-      padding: 0; }
+      padding: 0;
+      border-radius: 10px; }
       body .services .collapsible-header img {
-        margin-right: 20px; }
+        margin-right: 20px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px; }
       body .services .collapsible-header i {
         margin-left: auto; }
     body .services .collapsible-body {

@@ -379,6 +379,13 @@ body{
     margin-top:70px;
     padding:50px 0;
     background-color: #f5f6fa;
+    img{
+      max-width:1200px;
+      width:100%;
+      &.hide-on-med-and-up{
+        max-width: 400px;
+      }
+    }
   }
 
   .how-works{

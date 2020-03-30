@@ -6,6 +6,18 @@ body{
   background-color:#FCFAFA;
   font-family: 'Open Sans', sans-serif;
 
+  .ui-timepicker-standard{
+    -webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.1);
+    border: 0px;
+    margin-top: 5px;
+    font-size: 14px;
+    .ui-state-hover{
+      border:1px solid transparent;
+    }
+  }
+
   .show-on-small{
     display: none;
   }
@@ -265,18 +277,33 @@ body{
 
   .history{
     margin-top:100px;
-    #test1{
+    #test1,#test2{
       margin-top:40px;
       &>.row{
         background-color:white;
         position: relative;
-        &>div{
-          padding:20px 0;
+        margin-top: 20px;
+        border-radius: 10px;
+        .col{
+          padding:0;
+          .history-details{
+            margin-left:20px;
+            margin-top:15px;
+            div:not(:first-child){
+              font-size: 14px;
+              color: #a1a1a1;
+            }
+          }
+        }
+        img{
+          margin-bottom:-5px;
+          border-top-left-radius: 10px;
+          border-bottom-left-radius: 10px;
         }
         .pending{
           position:absolute;
-          bottom:0;
-          right:20px;
+          bottom:10px;
+          right:15px;
           opacity: 0.6;
         }
       }
@@ -607,6 +634,14 @@ body{
     .service-ratings{
       padding:60px 20px 0 0;
       border-top: 1px solid $border-color;
+      .step3-timeselect{
+        .padding-select{
+          display: inline-flex;
+        }
+        ul li{
+          margin-bottom:0 !important;
+        }
+      }
       .service-detail-container{
         justify-content: space-between;
         & > div{
@@ -637,7 +672,7 @@ body{
           width:60px;
         }
         .timepicker{
-          width:80px;
+          width:100px;
         }
         ul{
           margin-top:0;
@@ -816,7 +851,7 @@ body{
     padding-top:120px;
     .flex:not(.collapsible-header){
       border-bottom: 1px solid $border-color;
-      margin-bottom:70px;
+      margin-bottom:40px;
     }
     .flex{
       .guarantee,.discount{
@@ -848,6 +883,33 @@ body{
     .collapsible{
       box-shadow:none;
       border:0;
+      padding-right:35px;
+    }
+    .recently-added{
+      margin-left:20px;
+      padding-left:30px;
+      border-left:1px solid #C8D3D5;
+      h6{
+        margin-left:10px;
+        margin-bottom:15px;
+      }
+      .service-card{
+        background-color: white;
+        padding:10px;
+        border-radius: 10px;
+        -webkit-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.06);
+        -moz-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.06);
+        box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.06);
+        margin-bottom:20px;
+        img{
+          border-radius: 6px;
+          width:100%;
+        }
+        div{
+          font-size: 12px;
+          color: #a1a1a1;
+        }
+      }
     }
     .collapsible li{
       margin-top:20px;
@@ -1204,6 +1266,11 @@ body{
           margin-left:0;
           margin-bottom:30px;
         }
+      }
+      .recently-added{
+        border-left:0;
+        padding-left:0;
+        margin-top:40px;
       }
     }
   }

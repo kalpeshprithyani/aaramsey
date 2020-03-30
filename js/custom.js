@@ -25,7 +25,6 @@ $(document).ready(function(){
         setDefaultDate: true
     });
     $('.sidenav').sidenav();
-    $('.timepicker').timepicker();
 
     $('.with-gap[checked]').parent().parent().parent().addClass('active');
     $(document).on('click', '.address-block', function(e) {
@@ -46,4 +45,7 @@ $(document).ready(function(){
         watch: true,
     });
 
+    $('.timepicker').timepicker({
+        interval: 15
+    });
 });

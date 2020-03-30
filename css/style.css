@@ -6529,6 +6529,15 @@ input[type=range]::-ms-thumb {
 body {
   background-color: #FCFAFA;
   font-family: 'Open Sans', sans-serif; }
+  body .ui-timepicker-standard {
+    -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+    border: 0px;
+    margin-top: 5px;
+    font-size: 14px; }
+    body .ui-timepicker-standard .ui-state-hover {
+      border: 1px solid transparent; }
   body .show-on-small {
     display: none; }
   body ::placeholder {
@@ -6710,17 +6719,29 @@ body {
           margin-bottom: 0; }
   body .history {
     margin-top: 100px; }
-    body .history #test1 {
+    body .history #test1, body .history #test2 {
       margin-top: 40px; }
-      body .history #test1 > .row {
+      body .history #test1 > .row, body .history #test2 > .row {
         background-color: white;
-        position: relative; }
-        body .history #test1 > .row > div {
-          padding: 20px 0; }
-        body .history #test1 > .row .pending {
+        position: relative;
+        margin-top: 20px;
+        border-radius: 10px; }
+        body .history #test1 > .row .col, body .history #test2 > .row .col {
+          padding: 0; }
+          body .history #test1 > .row .col .history-details, body .history #test2 > .row .col .history-details {
+            margin-left: 20px;
+            margin-top: 15px; }
+            body .history #test1 > .row .col .history-details div:not(:first-child), body .history #test2 > .row .col .history-details div:not(:first-child) {
+              font-size: 14px;
+              color: #a1a1a1; }
+        body .history #test1 > .row img, body .history #test2 > .row img {
+          margin-bottom: -5px;
+          border-top-left-radius: 10px;
+          border-bottom-left-radius: 10px; }
+        body .history #test1 > .row .pending, body .history #test2 > .row .pending {
           position: absolute;
-          bottom: 0;
-          right: 20px;
+          bottom: 10px;
+          right: 15px;
           opacity: 0.6; }
   body .bg.bg2 {
     background-image: url("../img/bg2.jpg");
@@ -6956,6 +6977,10 @@ body {
     body .service-detail .service-ratings {
       padding: 60px 20px 0 0;
       border-top: 1px solid #C8D3D5; }
+      body .service-detail .service-ratings .step3-timeselect .padding-select {
+        display: inline-flex; }
+      body .service-detail .service-ratings .step3-timeselect ul li {
+        margin-bottom: 0 !important; }
       body .service-detail .service-ratings .service-detail-container {
         justify-content: space-between; }
         body .service-detail .service-ratings .service-detail-container > div {
@@ -6979,7 +7004,7 @@ body {
         margin-left: 10px;
         width: 60px; }
       body .service-detail .service-ratings .service-features .timepicker {
-        width: 80px; }
+        width: 100px; }
       body .service-detail .service-ratings .service-features ul {
         margin-top: 0;
         margin-left: 50px; }
@@ -7100,7 +7125,7 @@ body {
     padding-top: 120px; }
     body .services .flex:not(.collapsible-header) {
       border-bottom: 1px solid #C8D3D5;
-      margin-bottom: 70px; }
+      margin-bottom: 40px; }
     body .services .flex .guarantee, body .services .flex .discount {
       flex-basis: 25%;
       padding: 30px;
@@ -7123,7 +7148,29 @@ body {
       background-image: url("../img/discount.png"); }
     body .services .collapsible {
       box-shadow: none;
-      border: 0; }
+      border: 0;
+      padding-right: 35px; }
+    body .services .recently-added {
+      margin-left: 20px;
+      padding-left: 30px;
+      border-left: 1px solid #C8D3D5; }
+      body .services .recently-added h6 {
+        margin-left: 10px;
+        margin-bottom: 15px; }
+      body .services .recently-added .service-card {
+        background-color: white;
+        padding: 10px;
+        border-radius: 10px;
+        -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.06);
+        -moz-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.06);
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.06);
+        margin-bottom: 20px; }
+        body .services .recently-added .service-card img {
+          border-radius: 6px;
+          width: 100%; }
+        body .services .recently-added .service-card div {
+          font-size: 12px;
+          color: #a1a1a1; }
     body .services .collapsible li {
       margin-top: 20px;
       border-radius: 10px;
@@ -7347,4 +7394,8 @@ body {
     body .services .flex:not(.collapsible-header) .guarantee, body .services .flex:not(.collapsible-header) .discount {
       flex-basis: 100%;
       margin-left: 0;
-      margin-bottom: 30px; } }
+      margin-bottom: 30px; }
+  body .services .recently-added {
+    border-left: 0;
+    padding-left: 0;
+    margin-top: 40px; } }

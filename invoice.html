@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+
+    <style>
+        .invoice-box {
+            max-width: 800px;
+            padding:20px;
+            margin: auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, .15);
+            font-size: 16px;
+            line-height: 24px;
+            font-family: 'Open Sans', sans-serif;
+            color: #555;
+            border-radius: 10px;
+        }
+
+        .top .black-top{
+            border-radius:8px;
+            background-color:black;
+            color: #afafaf;
+            padding:10px;
+        }
+
+        .invoice-box table {
+            width: 100%;
+            line-height: inherit;
+            text-align: left;
+        }
+
+        .invoice-box table td {
+            padding: 5px;
+            vertical-align: top;
+        }
+
+        .invoice-box table tr td:not(:first-child) {
+            text-align: right;
+        }
+
+        .invoice-box table tr.top table td {
+            padding-bottom: 10px;
+        }
+
+        .invoice-box table tr.top table td.title {
+            font-size: 45px;
+            line-height: 45px;
+            color: #333;
+        }
+
+        .invoice-box table tr.information table td {
+            padding-bottom: 30px;
+        }
+
+        .invoice-box table tr.heading td {
+            background: #eee;
+            border-bottom: 1px solid #ddd;
+            font-weight: bold;
+        }
+
+        .invoice-box table tr.details td {
+            padding-bottom: 20px;
+        }
+
+        .invoice-box table tr.item td{
+            border-bottom: 1px solid #eee;
+        }
+
+        .invoice-box table tr.item.last td {
+            border-bottom: none;
+        }
+
+        .invoice-box table tr.total td:nth-child(3) {
+            border-top: 2px solid #eee;
+            line-height:30px;
+            padding-top:10px;
+            width:150px;
+        }
+
+        .company-details{
+            margin-top:30px;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .invoice-box table tr.top table td {
+                width: 100%;
+                display: block;
+                text-align: center;
+            }
+
+            .invoice-box table tr.information table td {
+                width: 100%;
+                display: block;
+                text-align: center;
+            }
+        }
+
+        /** RTL **/
+        .rtl {
+            direction: rtl;
+            font-family: Tahoma, 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+        }
+
+        .rtl table {
+            text-align: right;
+        }
+
+        .rtl table tr td:nth-child(2) {
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <div class="invoice-box">
+        <table cellpadding="0" cellspacing="0">
+            <tr class="top">
+                <td colspan="3">
+                    <div class="black-top">
+                        <table>
+                            <tr>
+                                <td class="title">
+                                    <img src="img/logo.png" style="width:100%; max-width:150px;">
+                                </td>
+                                <td>
+                                    Invoice #: 123<br>
+                                    Created: January 1, 2015<br>
+                                    Due: February 1, 2015
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+
+            <tr class="information">
+                <td colspan="3">
+                    <table>
+                        <tr>
+
+                            <td>
+                                <span style="font-size:14px;display:block;margin-bottom:5px;color:#919191;">Invoice to:</span>
+                                <span style="font-size:20px;color:black;margin-bottom:5px;display: block">John Doe</span>
+                                796 Silver Harbour, TX 79273, US<br/>
+                                john@example.com
+                            </td>
+                            <td>
+                                <div class="company-details">
+                                Aaramsey Pvt. Ltd.<br/>
+                                12345 Sunny Road<br/>
+                                Sunnyville, CA 12345
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+<!--
+            <tr class="heading">
+                <td>
+                    Payment Method
+                </td>
+
+                <td>
+                    Check #
+                </td>
+            </tr>
+
+            <tr class="details">
+                <td>
+                    Check
+                </td>
+
+                <td>
+                    1000
+                </td>
+            </tr>-->
+
+            <tr class="heading">
+                <td>
+                    Description
+                </td>
+
+                <td>
+                    Quantity
+                </td>
+                <td>
+                    Amount
+                </td>
+            </tr>
+
+            <tr class="item">
+                <td>
+                    Website design
+                </td>
+
+                <td>
+                    1
+                </td>
+                <td>
+                    ₹300.00
+                </td>
+            </tr>
+
+            <tr class="item">
+                <td>
+                    Hosting (3 months)
+                </td>
+
+                <td>
+                    2
+                </td>
+                <td>
+                    ₹75.00
+                </td>
+            </tr>
+
+            <tr class="item last">
+                <td>
+                    Domain name (1 year)
+                </td>
+
+                <td>
+                    3
+                </td>
+                <td>
+                    ₹10.00
+                </td>
+            </tr>
+
+            <tr class="total">
+                <td></td>
+                <td></td>
+                <td>
+                    Subtotal: ₹385.00<br/>
+                    Discount:₹50<br/>
+                    <span style="font-weight: bold;">Total: ₹335.00</span>
+                </td>
+            </tr>
+        </table>
+        <footer style="text-align: center;margin-top:100px;font-size: 12px;border-top:1px solid #d8d8d8;padding-top:10px;color:#a5a5a5">
+            Thank you!<br/>
+            Invoice was created on a computer and is valid without the signature and seal.
+        </footer>
+    </div>
+</div>
+</body>
+</html>

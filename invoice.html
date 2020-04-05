@@ -69,14 +69,8 @@
             border-bottom: 1px solid #eee;
         }
 
-        .invoice-box table tr.item.last td {
-            border-bottom: none;
-        }
-
         .invoice-box table tr.total td:nth-child(3) {
-            border-top: 2px solid #eee;
-            line-height:30px;
-            padding-top:10px;
+            padding-top:5px;
             width:150px;
         }
 
@@ -184,7 +178,6 @@
                 <td>
                     Description
                 </td>
-
                 <td>
                     Quantity
                 </td>
@@ -233,13 +226,24 @@
             </tr>
 
             <tr class="total">
+                <td style="padding-top:10px;"></td>
+                <td style="padding-top:10px;">Tax:</td>
+                <td style="padding-top:10px;">₹385.00</td>
+            </tr>
+            <tr class="total">
                 <td></td>
+                <td>Subtotal:</td>
+                <td>₹385.00</td>
+            </tr>
+            <tr class="total">
                 <td></td>
-                <td>
-                    Subtotal: ₹385.00<br/>
-                    Discount:₹50<br/>
-                    <span style="font-weight: bold;">Total: ₹335.00</span>
-                </td>
+                <td>Discount:</td>
+                <td>₹50</td>
+            </tr>
+            <tr class="total">
+                <td></td>
+                <td style="font-weight: bold;">Total:</td>
+                <td style="font-weight: bold">₹50</td>
             </tr>
         </table>
         <footer style="text-align: center;margin-top:100px;font-size: 12px;border-top:1px solid #d8d8d8;padding-top:10px;color:#a5a5a5">

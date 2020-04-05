@@ -6746,53 +6746,66 @@ body {
   body .bg.bg2 {
     background-image: url("../img/bg2.jpg");
     background-repeat: no-repeat;
-    background-position: right; }
-    body .bg.bg2 .search-box {
+    background-position: right;
+    /*
+    .search-box{
       background-color: transparent;
-      box-shadow: none; }
-      body .bg.bg2 .search-box a {
-        padding: 15px 20px;
-        box-shadow: none; }
-        body .bg.bg2 .search-box a:hover {
-          -webkit-box-shadow: 0px 8px 20px 0px rgba(0, 172, 30, 0.2);
-          -moz-box-shadow: 0px 8px 20px 0px rgba(0, 172, 30, 0.2);
-          box-shadow: 0px 8px 20px 0px rgba(0, 172, 30, 0.2); }
-      body .bg.bg2 .search-box .btn:first-child, body .bg.bg2 .search-box .btn-large:first-child, body .bg.bg2 .search-box .btn-small:first-child {
+      box-shadow: none;
+      a{
+        padding:15px 20px;
+        box-shadow: none;
+        &:hover{
+          -webkit-box-shadow:0px 8px 20px 0px rgba(0, 172, 30, 0.2);
+          -moz-box-shadow:0px 8px 20px 0px rgba(0, 172, 30, 0.2);
+          box-shadow:0px 8px 20px 0px rgba(0, 172, 30, 0.2);
+        }
+      }
+      .btn:first-child{
         background-color: #00E82A;
-        margin-right: 20px; }
-      body .bg.bg2 .search-box .btn:last-child, body .bg.bg2 .search-box .btn-large:last-child, body .bg.bg2 .search-box .btn-small:last-child {
-        border: 2px solid #00E82A;
-        background-color: transparent; }
+        margin-right:20px;
+      }
+      .btn:last-child{
+        border:2px solid #00E82A;
+        background-color: transparent;
+      }
+    }*/ }
   body .bg {
     height: 60vh;
     background-image: url("../img/bg.jpg");
     background-repeat: no-repeat;
-    background-position: right; }
+    background-position: right;
+    /*
+    .search-box{
+      margin-top:50px;
+      background-color: white;
+      -webkit-box-shadow: 0 8px 13px 0 rgba(0,0,0,0.05);
+      -moz-box-shadow: 0 8px 13px 0 rgba(0,0,0,0.05);
+      box-shadow: 0 8px 13px 0 rgba(0,0,0,0.05);
+      a{
+        color:black;
+        height: 100%;
+        display: block;
+        padding: 25px;
+        i{
+          vertical-align: -5px;
+        }
+      }
+      .search-area{
+        padding:15px 0;
+        .show-on-small-custom{
+          display: none;
+        }
+        input{
+          margin-bottom: 0;
+          border-left:1px solid #E1E1E1;
+          padding-left:20px;
+          font-size: 1.15rem;
+        }
+      }
+    }*/ }
     body .bg .container.flex {
       align-items: center;
       height: 100%; }
-    body .bg .search-box {
-      margin-top: 50px;
-      background-color: white;
-      -webkit-box-shadow: 0 8px 13px 0 rgba(0, 0, 0, 0.05);
-      -moz-box-shadow: 0 8px 13px 0 rgba(0, 0, 0, 0.05);
-      box-shadow: 0 8px 13px 0 rgba(0, 0, 0, 0.05); }
-      body .bg .search-box a {
-        color: black;
-        height: 100%;
-        display: block;
-        padding: 25px; }
-        body .bg .search-box a i {
-          vertical-align: -5px; }
-      body .bg .search-box .search-area {
-        padding: 15px 0; }
-        body .bg .search-box .search-area .show-on-small-custom {
-          display: none; }
-        body .bg .search-box .search-area input {
-          margin-bottom: 0;
-          border-left: 1px solid #E1E1E1;
-          padding-left: 20px;
-          font-size: 1.15rem; }
   body .categories {
     background-color: white;
     padding-bottom: 50px;
@@ -6822,6 +6835,34 @@ body {
       width: 100%; }
       body .discount-banner img.hide-on-med-and-up {
         max-width: 400px; }
+    body .discount-banner .search-box {
+      position: absolute;
+      z-index: 10;
+      top: 350px;
+      margin-top: 50px;
+      background-color: white;
+      -webkit-box-shadow: 0 8px 13px 0 rgba(0, 0, 0, 0.05);
+      -moz-box-shadow: 0 8px 13px 0 rgba(0, 0, 0, 0.05);
+      box-shadow: 0 8px 13px 0 rgba(0, 0, 0, 0.05);
+      width: 450px; }
+      body .discount-banner .search-box > div:first-child a {
+        display: flex; }
+      body .discount-banner .search-box a {
+        color: black;
+        height: 100%;
+        display: block;
+        padding: 25px; }
+        body .discount-banner .search-box a i {
+          vertical-align: -5px; }
+      body .discount-banner .search-box .search-area {
+        padding: 15px 0; }
+        body .discount-banner .search-box .search-area .show-on-small-custom {
+          display: none; }
+        body .discount-banner .search-box .search-area input {
+          margin-bottom: 0;
+          border-left: 1px solid #E1E1E1;
+          padding-left: 20px;
+          font-size: 1.15rem; }
   body .how-works .container {
     padding: 200px 0;
     text-align: center; }
@@ -7248,6 +7289,8 @@ body {
     display: flex; }
 
 @media only screen and (max-width: 992px) {
+  body .discount-banner .search-box {
+    top: 280px; }
   body .service-detail .service-ratings .service-detail-container {
     flex-wrap: wrap; }
     body .service-detail .service-ratings .service-detail-container > div {
@@ -7271,6 +7314,9 @@ body {
       flex-shrink: 0; } }
 
 @media only screen and (max-width: 600px) {
+  body .discount-banner .search-box {
+    top: 600px;
+    width: 90%; }
   body .service-detail .head {
     margin: 0 0 30px 0; }
     body .service-detail .head .service-name {
@@ -7353,7 +7399,7 @@ body {
       margin-top: 20px;
       margin-left: 0 !important; }
   body .discount-banner {
-    margin-top: 100px; }
+    padding-bottom: 100px; }
   body #discount-banner-carousel {
     height: 500px !important; }
   body .how-works .container {

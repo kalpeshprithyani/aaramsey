@@ -45,13 +45,12 @@
 <nav class="z-depth-0">
     <div class="nav-wrapper">
         <a href="index.html" class="brand-logo"><img src="img/logo.png" alt="logo"/></a>
-        <!--
-        <ul id="location-mobile" class="dropdown-content">
-            <li><a href="#!">Bhopal</a></li>
-            <li><a href="#!">Indore</a></li>
-        </ul>
-        -->
-        <!--<a class="dropdown-trigger hide-on-large-only right" href="#!" data-target="location-mobile" color="white">Bhopal<i class="material-icons right">keyboard_arrow_down</i></a>-->
+        <div class="hide-on-med-and-up">
+        <select>
+            <option value="1" selected>Bhopal</option>
+            <option value="2">Indore</option>
+        </select>
+        </div>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
             <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Services<i class="material-icons right">keyboard_arrow_down</i></a></li>
@@ -62,61 +61,66 @@
         </ul>
     </div>
 
-    <!-- Modal Structure -->
-    <div id="modal1" class="modal">
-        <div class="modal-content black-text">
-            <i class="material-icons modal-close right">close</i>
-            <h4>Sign In</h4>
-            <div class="flex mob-num">
-                <i class="material-icons right">smartphone</i><input placeholder="Mobile Number"/>
-            </div>
-            <div class="social flex">
-                <div>
-                    <a class="waves-effect waves-light btn">Generate OTP</a>
-                </div>
-                <div>
-                    <a href="#">
-                        <img src="img/fb-color.png" alt="Facebook Login"/>
-                    </a>
-                    <a href="#">
-                        <img src="img/google.png" alt="Google Login"/>
-                    </a>
-                </div>
-            </div>
-            <div class="terms">By signing up, you agree to our <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a></div>
-        </div>
-    </div>
-    <!-- Modal Structure -->
-    <div id="modal2" class="modal">
-        <div class="modal-content black-text">
-            <i class="material-icons modal-close right">close</i>
-            <h4>Sign Up</h4>
-            <div class="flex mob-num">
-                <i class="material-icons right">account_circle</i><input placeholder="Full Name"/>
-            </div>
-            <div class="flex mob-num">
-                <i class="material-icons right">email</i><input placeholder="Email Address"/>
-            </div>
-            <div class="flex mob-num">
-                <i class="material-icons right">smartphone</i><input placeholder="Mobile Number"/>
-            </div>
-            <div class="social flex">
-                <div>
-                    <a class="waves-effect waves-light btn">Generate OTP</a>
-                </div>
-                <div>
-                    <a href="#">
-                        <img src="img/fb-color.png" alt="Facebook Login"/>
-                    </a>
-                    <a href="#">
-                        <img src="img/google.png" alt="Google Login"/>
-                    </a>
-                </div>
-            </div>
-            <div class="terms">By signing up, you agree to our <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a></div>
-        </div>
-    </div>
 </nav>
+
+
+
+<!-- Modal Structure -->
+<div id="modal1" class="modal">
+    <div class="modal-content black-text">
+        <i class="material-icons modal-close right">close</i>
+        <h4>Sign In</h4>
+        <div class="flex mob-num">
+            <i class="material-icons right">smartphone</i><input placeholder="Mobile Number"/>
+        </div>
+        <div class="social flex">
+            <div>
+                <a class="waves-effect waves-light btn">Generate OTP</a>
+            </div>
+            <div>
+                <a href="#">
+                    <img src="img/fb-color.png" alt="Facebook Login"/>
+                </a>
+                <a href="#">
+                    <img src="img/google.png" alt="Google Login"/>
+                </a>
+            </div>
+        </div>
+        <div class="terms">By signing up, you agree to our <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a></div>
+    </div>
+</div>
+<!-- Modal Structure -->
+<div id="modal2" class="modal">
+    <div class="modal-content black-text">
+        <i class="material-icons modal-close right">close</i>
+        <h4>Sign Up</h4>
+        <div class="flex mob-num">
+            <i class="material-icons right">account_circle</i><input placeholder="Full Name"/>
+        </div>
+        <div class="flex mob-num">
+            <i class="material-icons right">email</i><input placeholder="Email Address"/>
+        </div>
+        <div class="flex mob-num">
+            <i class="material-icons right">smartphone</i><input placeholder="Mobile Number"/>
+        </div>
+        <div class="social flex">
+            <div>
+                <a class="waves-effect waves-light btn">Generate OTP</a>
+            </div>
+            <div>
+                <a href="#">
+                    <img src="img/fb-color.png" alt="Facebook Login"/>
+                </a>
+                <a href="#">
+                    <img src="img/google.png" alt="Google Login"/>
+                </a>
+            </div>
+        </div>
+        <div class="terms">By signing up, you agree to our <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a></div>
+    </div>
+</div>
+
+
 
 <section class="discount-banner">
     <div class="container">

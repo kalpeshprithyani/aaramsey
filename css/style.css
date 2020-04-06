@@ -6653,6 +6653,17 @@ body {
         font-weight: bold; }
   body .sidenav {
     padding-top: 50px; }
+  body .nav-wrapper .select-wrapper {
+    float: right;
+    width: 80px; }
+    body .nav-wrapper .select-wrapper .select-dropdown.dropdown-trigger {
+      vertical-align: -46px;
+      margin-top: 6px;
+      color: white; }
+    body .nav-wrapper .select-wrapper .dropdown-content {
+      top: 56px !important; }
+    body .nav-wrapper .select-wrapper svg {
+      fill: white; }
   body .nav-wrapper a.profile-pic {
     height: 64px; }
     body .nav-wrapper a.profile-pic:hover {
@@ -6674,49 +6685,49 @@ body {
       color: #9caaad; }
     body nav .hide-on-med-and-down li:last-child a {
       color: white; }
-    body nav .modal {
-      width: 40%;
-      border-radius: 10px;
-      background-color: #F1F1F1; }
-      body nav .modal .terms {
-        font-size: 12px;
+  body .modal {
+    width: 90%;
+    border-radius: 10px;
+    background-color: #F1F1F1; }
+    body .modal .terms {
+      font-size: 12px;
+      color: #6E8387; }
+      body .modal .terms a {
+        color: black; }
+    body .modal .modal-close {
+      line-height: 25px;
+      opacity: 0.6; }
+      body .modal .modal-close:hover {
+        opacity: 1; }
+    body .modal .btn, body .modal .btn-large, body .modal .btn-small {
+      box-shadow: none;
+      background-color: #00BB22;
+      padding: 10px 20px;
+      height: auto; }
+    body .modal .social {
+      justify-content: space-between;
+      margin-top: 10px;
+      align-items: center; }
+      body .modal .social a {
+        display: inline-block; }
+      body .modal .social img {
+        margin-left: 30px;
+        margin-top: 25px; }
+    body .modal h4 {
+      margin-bottom: 40px; }
+    body .modal .mob-num {
+      width: 100%;
+      margin-top: 20px;
+      background-color: white;
+      -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
+      -moz-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
+      box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
+      align-items: center; }
+      body .modal .mob-num i {
+        margin-right: 10px;
         color: #6E8387; }
-        body nav .modal .terms a {
-          color: black; }
-      body nav .modal .modal-close {
-        line-height: 25px;
-        opacity: 0.6; }
-        body nav .modal .modal-close:hover {
-          opacity: 1; }
-      body nav .modal .btn, body nav .modal .btn-large, body nav .modal .btn-small {
-        box-shadow: none;
-        background-color: #00BB22;
-        padding: 10px 20px;
-        height: auto; }
-      body nav .modal .social {
-        justify-content: space-between;
-        margin-top: 10px;
-        align-items: center; }
-        body nav .modal .social a {
-          display: inline-block; }
-        body nav .modal .social img {
-          margin-left: 30px;
-          margin-top: 25px; }
-      body nav .modal h4 {
-        margin-bottom: 40px; }
-      body nav .modal .mob-num {
-        width: 100%;
-        margin-top: 20px;
-        background-color: white;
-        -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
-        -moz-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
-        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
-        align-items: center; }
-        body nav .modal .mob-num i {
-          margin-right: 10px;
-          color: #6E8387; }
-        body nav .modal .mob-num input {
-          margin-bottom: 0; }
+      body .modal .mob-num input {
+        margin-bottom: 0; }
   body .history {
     margin-top: 100px; }
     body .history #test1, body .history #test2 {

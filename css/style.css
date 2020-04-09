@@ -6652,7 +6652,10 @@ body {
       body .t-c div strong {
         font-weight: bold; }
   body .sidenav {
-    padding-top: 50px; }
+    padding-top: 25px;
+    padding-bottom: 30px; }
+    body .sidenav li a {
+      padding-left: 20px; }
   body .nav-wrapper .select-wrapper {
     float: right;
     width: 80px; }
@@ -7262,7 +7265,10 @@ body {
     color: #8B898A;
     font-size: 14px; }
     body footer .footer-categories {
-      flex-basis: 20%; }
+      flex-basis: 20%;
+      padding: 0 20px; }
+      body footer .footer-categories:first-child {
+        flex-basis: 60%; }
       body footer .footer-categories a {
         color: #8B898A;
         display: block;
@@ -7325,9 +7331,13 @@ body {
       flex-shrink: 0; } }
 
 @media only screen and (max-width: 600px) {
-  body .discount-banner .search-box {
-    top: 600px;
-    width: 90%; }
+  body .discount-banner {
+    margin-top: 100px;
+    padding-bottom: 50px;
+    min-height: 500px; }
+    body .discount-banner .search-box {
+      top: 30px;
+      width: 90%; }
   body .service-detail .head {
     margin: 0 0 30px 0; }
     body .service-detail .head .service-name {
@@ -7409,8 +7419,6 @@ body {
     body .features .flex .top-col:nth-child(2) {
       margin-top: 20px;
       margin-left: 0 !important; }
-  body .discount-banner {
-    padding-bottom: 100px; }
   body #discount-banner-carousel {
     height: 500px !important; }
   body .how-works .container {

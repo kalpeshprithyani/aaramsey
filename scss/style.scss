@@ -179,7 +179,11 @@ body{
   }
 
   .sidenav{
-    padding-top:50px;
+    padding-top:25px;
+    padding-bottom:30px;
+    li a{
+      padding-left:20px;
+    }
   }
   .nav-wrapper{
     .select-wrapper{
@@ -1022,7 +1026,11 @@ body{
     color:#8B898A;
     font-size: 14px;
     .footer-categories{
+      &:first-child{
+        flex-basis: 60%;
+      }
       flex-basis: 20%;
+      padding:0 20px;
       a{
         color:#8B898A;
         display: block;
@@ -1131,8 +1139,11 @@ body{
 @media only screen and (max-width: 600px) {
   body{
     .discount-banner{
+      margin-top:100px;
+      padding-bottom:50px;
+      min-height:500px;
       .search-box{
-        top:600px;
+        top:30px;
         width:90%;
       }
     }
@@ -1266,9 +1277,6 @@ body{
       }
     }
 
-    .discount-banner{
-      padding-bottom:100px;
-    }
     #discount-banner-carousel{
       height:500px !important;
     }
